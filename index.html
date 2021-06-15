@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Bootstrap v5.0-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
@@ -14,12 +15,13 @@
 <body>
     <header>
         <div class="text-center">
-            <img src="" alt=""><h1>Guessing Bee</h1>
+            <img src="" alt="">
+            <h1>Guessing Bee</h1>
         </div>
     </header>
     <main>
-        <div class="row justify-content-md-center">
-            <div class="border col-4 p-3">
+        <div id="start-screen" class="row justify-content-md-center  m-3">
+            <div class="border col-lg-4 p-3">
                 <p class="text-center fs-2">Pick dificulty to start the game!</p>
                 <div class="d-grid gap-2 m-5">
                     <button class="btn btn-primary" type="button">EASY</button>
@@ -27,12 +29,41 @@
                     <button class="btn btn-primary" type="button">HARD</button>
                 </div>
             </div>
-
         </div>
+        <div id="start-screen" class="row justify-content-md-center  m-3">
+            <div class="border col-lg-4 p-3">
+                <div class="clearfix">
+                    <div class="float-start">
+                        EASY
+                    </div>
+                    <div class="float-end">
+                        <p class="text-end">score: <span>0</span>
+                            <br>
+                            h-score: <span>0</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="text-center">
+                    image goes here
+                </div>
+                <div>
+                    theme goes here
+                </div>
+                <div class="text-center">
+                    Guess goes here
+                </div>
+                <div class="text-center">
+                    alphabet buttons go here
+                </div>
+            </div>
+        </div>
+
     </main>
 
     <!--Bootstrap v5.0-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
     <script src="assets/js/script.js"></script>
 </body>
 
