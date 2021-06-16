@@ -1,0 +1,15 @@
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+h1 img {
+    width: calc(1.375rem + 1.5vw);
+    height: calc(1.375rem + 1.5vw);
+}
+
+.image-container {
+    width: 60%;
+    margin: 0 auto;
+}

@@ -13,25 +13,27 @@
 </head>
 
 <body>
+    <!--logo and name of game-->
     <header>
         <div class="text-center">
-            <img src="" alt="">
-            <h1>Guessing Bee</h1>
+            <h1><img src="assets/images/bee-logo.png" alt=""> Guessing Bee</h1>
         </div>
     </header>
     <main>
+        <!-- start screen with difficulty choice -->
         <div id="start-screen" class="row justify-content-md-center  m-3">
-            <div class="border col-lg-4 p-3">
+            <div class="border col-12 col-lg-4 col-md-6 col-sm-8 p-3">
                 <p class="text-center fs-2">Pick dificulty to start the game!</p>
                 <div class="d-grid gap-2 m-5">
-                    <button class="btn btn-primary" type="button">EASY</button>
-                    <button class="btn btn-primary" type="button">NORMAL</button>
-                    <button class="btn btn-primary" type="button">HARD</button>
+                    <button class="btn btn-primary" type="button">Easy</button>
+                    <button class="btn btn-primary" type="button">Normal</button>
+                    <button class="btn btn-primary" type="button">Hard</button>
                 </div>
             </div>
         </div>
+        <!-- main game screen -->
         <div id="start-screen" class="row justify-content-md-center  m-3">
-            <div class="border col-lg-4 p-3">
+            <div class="border col-12 col-lg-4 col-md-6 col-sm-8 p-3">
                 <div class="clearfix">
                     <div class="float-start">
                         EASY
@@ -43,8 +45,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="text-center">
-                    image goes here
+                <div class="image-container text-center">
+                    <img src="assets/images/flower-easy-8.png" alt="">
                 </div>
                 <div>
                     theme goes here
@@ -52,12 +54,58 @@
                 <div class="text-center">
                     Guess goes here
                 </div>
-                <div class="text-center">
-                    alphabet buttons go here
+                <div id="abc-btns" class="text-center">
                 </div>
             </div>
         </div>
-
+        <!-- screen for correct guess -->
+        <div id="start-screen" class="row justify-content-md-center  m-3">
+            <div class="border col-12 col-lg-4 col-md-6 col-sm-8 p-3">
+                <div class="clearfix">
+                    <div class="float-start">
+                        EASY
+                    </div>
+                    <div class="float-end">
+                        <p class="text-end">score: <span>0</span>
+                            <br>
+                            h-score: <span>0</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="text-center fs-2">Correct! <br> You scored <br> <span>0</span></p>
+                <div class="image-container text-center">
+                    <img src="assets/images/bee-happy.png" alt="">
+                </div>
+                <div class="d-grid gap-2 m-5">
+                    <button class="btn btn-primary" type="button">Next</button>
+                    <button class="btn btn-primary" type="button">Restart</button>
+                </div>
+            </div>
+        </div>
+        <!-- game over screen -->
+        <div id="start-screen" class="row justify-content-md-center  m-3">
+            <div class="border col-12 col-lg-4 col-md-6 col-sm-8 p-3">
+                <div class="clearfix">
+                    <div class="float-start">
+                        EASY
+                    </div>
+                    <div class="float-end">
+                        <p class="text-end">score: <span>0</span>
+                            <br>
+                            h-score: <span>0</span>
+                        </p>
+                    </div>
+                </div>
+                <p class="text-center fs-2">Game over! <br> The correct answer was: <br> <span>answer</span></p>
+                <div class="image-container text-center">
+                    <img src="assets/images/bee-sad.png" alt="">
+                </div>
+                <div class="d-grid gap-2 m-5">
+                    <button class="btn btn-primary" type="button">Try again</button>
+                    <button class="btn btn-primary" type="button">Restart</button>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!--Bootstrap v5.0-->
