@@ -12,3 +12,51 @@ function generateAbcBtns () {
 }
 
 generateAbcBtns();
+
+function startEasy () {
+
+}
+
+function getTheme () {
+
+}
+
+function getPhrase () {
+
+}
+
+function generateUnderscores () {
+
+}
+
+function checkGuess () {
+
+}
+
+function addLetters () {
+
+}
+
+function nextImage () {
+
+}
+
+function checkWordComplete () {
+
+}
+
+function correctGuess () {
+
+}
+
+function outOfMoves () {
+
+}
+
+function increaseScore () {
+
+}
+
+function increaseHighScore () {
+
+}
