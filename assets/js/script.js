@@ -1,11 +1,11 @@
 (function () {
 
-    document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('start-screen').style.display = 'none';
         document.getElementById('game-screen').style.display = 'none';
         document.getElementById('correct-screen').style.display = 'none';
         document.getElementById('game-over-screen').style.display = 'none';
-        startEasy();
+        startScreen();
     });
 
     /**
@@ -21,23 +21,24 @@
         document.getElementById('abc-btns').innerHTML = html;
     }
 
-    function startEasy() {
+    function startScreen() {
         document.getElementById('start-screen').style.display = 'flex';
-        document.getElementById('btn-easy').addEventListener('click', playGame('easy'));
-        document.getElementById('btn-normal').addEventListener('click', playGame('normal'));
-        document.getElementById('btn-hard').addEventListener('click', playGame('hard'));
+        let buttons = document.getElementsByClassName('start-btn');
+        for (const button of buttons) {
+            button.addEventListener('click', function () {
+                let gameType = this.getAttribute('data-type');
+                generateGameScreen(gameType);
+            });
+        }
     }
 
-    function startMedium() {
-
+    function showGame() {
+        document.getElementById('start-screen').style.display = 'none';
+        document.getElementById('game-screen').style.display = 'flex';
     }
 
-    function startHard() {
-
-    }
-
-    function playGame() {
-
+    function generateGameScreen(gameType) {
+        
     }
 
     function getTheme() {
