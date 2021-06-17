@@ -31,26 +31,23 @@
         </div>
         <!-- main game screen -->
         <div id="game-screen" class="row justify-content-sm-center  m-3">
-            <div class="border col-12 col-lg-4 col-md-6 col-sm-8 p-3 ">
+            <div class="border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3 ">
                 <div class="clearfix">
-                    <div class="float-start">
-                        EASY
+                    <div id="difficulty" class="float-start">
                     </div>
                     <div class="float-end">
-                        <p class="text-end">score: <span>0</span>
+                        <p class="text-end">score: <span id="score"></span>
                             <br>
-                            h-score: <span>0</span>
+                            h-score: <span id="h-score"></span>
                         </p>
                     </div>
                 </div>
                 <div class="image-container text-center">
-                    <img src="assets/images/flower-easy-8.png" alt="">
+                    <img id="flower-image" src="" alt="">
                 </div>
-                <div>
-                    theme goes here
+                <div id="theme">
                 </div>
-                <div class="text-center">
-                    Guess goes here
+                <div id="phrase" class="text-center">
                 </div>
                 <div id="abc-btns" class="text-center">
                 </div>
@@ -84,13 +81,12 @@
         <div id="game-over-screen" class="row justify-content-sm-center  m-3">
             <div class="border col-12 col-lg-4 col-md-6 col-sm-8 p-3">
                 <div class="clearfix">
-                    <div class="float-start">
-                        EASY
+                    <div class="difficulty float-start">
                     </div>
                     <div class="float-end">
-                        <p class="text-end">score: <span>0</span>
+                        <p class="text-end">score: <span class = "score"></span>
                             <br>
-                            h-score: <span>0</span>
+                            h-score: <span class = "h-score"></span>
                         </p>
                     </div>
                 </div>
