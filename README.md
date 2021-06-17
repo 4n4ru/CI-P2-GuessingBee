@@ -151,10 +151,11 @@ You can clone the repository by following these steps:
 
 ### Media
 In order of apearance:
+- [background image]('assets/images/background.jpg'): <a href='https://www.freepik.com/free-photos-vectors/floral'>Floral vector created by macrovector_official - www.freepik.com</a>
 
-  
+
 ### Code
-
+- CSS for background image opacity https://css-tricks.com/snippets/css/transparent-background-images/
 
 ## Acknowledgements
 I would like to take the opportunity to thank:

@@ -1,62 +1,85 @@
-/**
- * Generates alphabet buttons for the main game screen
- */
+(function () {
 
-function generateAbcBtns () {
-    let alphabet = 'abcdefghijklmnopqrstuvwxyz';
-    let html = '';
-    for (const letter of alphabet) {
-        html += `<button class="btn btn-primary m-1 col-1 p-1">${letter}</button>`;
+    document.addEventListener('DOMContentLoaded', startEasy());
+
+    /**
+     * Generates alphabet buttons for the main game screen
+     */
+
+    function generateAbcBtns() {
+        let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+        let html = '';
+        for (const letter of alphabet) {
+            html += `<button class="btn btn-primary m-1 col-1 p-1">${letter}</button>`;
+        }
+        document.getElementById('abc-btns').innerHTML = html;
     }
-    document.getElementById('abc-btns').innerHTML = html;
-}
 
-generateAbcBtns();
+    function startEasy() {
+        showStart();
+        document.getElementById('btn-easy').addEventListener('click', showGame('easy'));
+        document.getElementById('btn-normal').addEventListener('click', showGame('normal'));
+        document.getElementById('btn-hard').addEventListener('click', showGame('hard'));
+    }
 
-function startEasy () {
+    function showStart() {
+        let clon = document.getElementById('start-screen').content.cloneNode(true);
+        document.body.appendChild(clon);
+      }
 
-}
+    function startMedium() {
 
-function getTheme () {
+    }
 
-}
+    function startHard() {
 
-function getPhrase () {
+    }
 
-}
+    function showGame() {
+        
+    }
 
-function generateUnderscores () {
+    function getTheme() {
 
-}
+    }
 
-function checkGuess () {
+    function getPhrase() {
 
-}
+    }
 
-function addLetters () {
+    function generateUnderscores() {
 
-}
+    }
 
-function nextImage () {
+    function checkGuess() {
 
-}
+    }
 
-function checkWordComplete () {
+    function addLetters() {
 
-}
+    }
 
-function correctGuess () {
+    function nextImage() {
 
-}
+    }
 
-function outOfMoves () {
+    function checkWordComplete() {
 
-}
+    }
 
-function increaseScore () {
+    function correctGuess() {
 
-}
+    }
 
-function increaseHighScore () {
+    function outOfMoves() {
 
-}
+    }
+
+    function increaseScore() {
+
+    }
+
+    function increaseHighScore() {
+
+    }
+})();

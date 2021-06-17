@@ -13,100 +13,106 @@
 </head>
 
 <body>
-    <!--logo and name of game-->
-    <header>
-        <div class="text-center">
+    <div class="game-container row justify-content-sm-center">
+        <!--logo and name of game-->
+        <div class="text-center col-12 col-lg-4 col-md-6 col-sm-8 p-3 ">
             <h1><img src="assets/images/bee-logo.png" alt=""> Guessing Bee</h1>
         </div>
-    </header>
-    <main>
         <!-- start screen with difficulty choice -->
-        <div id="start-screen" class="row justify-content-sm-center  m-3">
-            <div class="border col-12 col-lg-4 col-md-6 col-sm-8 p-3">
-                <p class="text-center fs-2">Pick dificulty to start the game!</p>
-                <div class="d-grid gap-2 m-5">
-                    <button class="btn btn-primary" type="button">Easy</button>
-                    <button class="btn btn-primary" type="button">Normal</button>
-                    <button class="btn btn-primary" type="button">Hard</button>
+        <template id="start-screen">
+            <div class="row justify-content-sm-center m-3">
+                <div class="border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3">
+                    <p class="text-center fs-2">Pick dificulty to start the game!</p>
+                    <div class="d-grid gap-2 m-5">
+                        <button id="btn-easy" class="btn btn-primary" type="button">Easy</button>
+                        <button id="btn-normal" class="btn btn-primary" type="button">Normal</button>
+                        <button id="btn-hard" class="btn btn-primary" type="button">Hard</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </template>
         <!-- main game screen -->
-        <div id="start-screen" class="row justify-content-sm-center  m-3">
-            <div class="border col-12 col-lg-4 col-md-6 col-sm-8 p-3">
-                <div class="clearfix">
-                    <div class="float-start">
-                        EASY
+        <template>
+            <div id="start-screen" class="row justify-content-sm-center  m-3">
+                <div class="border col-12 col-lg-4 col-md-6 col-sm-8 p-3 ">
+                    <div class="clearfix">
+                        <div class="float-start">
+                            EASY
+                        </div>
+                        <div class="float-end">
+                            <p class="text-end">score: <span>0</span>
+                                <br>
+                                h-score: <span>0</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="float-end">
-                        <p class="text-end">score: <span>0</span>
-                            <br>
-                            h-score: <span>0</span>
-                        </p>
+                    <div class="image-container text-center">
+                        <img src="assets/images/flower-easy-8.png" alt="">
                     </div>
-                </div>
-                <div class="image-container text-center">
-                    <img src="assets/images/flower-easy-8.png" alt="">
-                </div>
-                <div>
-                    theme goes here
-                </div>
-                <div class="text-center">
-                    Guess goes here
-                </div>
-                <div id="abc-btns" class="text-center">
+                    <div>
+                        theme goes here
+                    </div>
+                    <div class="text-center">
+                        Guess goes here
+                    </div>
+                    <div id="abc-btns" class="text-center">
+                    </div>
                 </div>
             </div>
-        </div>
+        </template>
         <!-- screen for correct guess -->
-        <div id="start-screen" class="row justify-content-sm-center  m-3">
-            <div class="border col-12 col-lg-4 col-md-6 col-sm-8 p-3">
-                <div class="clearfix">
-                    <div class="float-start">
-                        EASY
+        <template>
+            <div id="start-screen" class="row justify-content-sm-center  m-3">
+                <div class="border col-12 col-lg-4 col-md-6 col-sm-8 p-3">
+                    <div class="clearfix">
+                        <div class="float-start">
+                            EASY
+                        </div>
+                        <div class="float-end">
+                            <p class="text-end">score: <span>0</span>
+                                <br>
+                                h-score: <span>0</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="float-end">
-                        <p class="text-end">score: <span>0</span>
-                            <br>
-                            h-score: <span>0</span>
-                        </p>
+                    <p class="text-center fs-2">Correct! <br> You scored <br> <span>0</span></p>
+                    <div class="image-container text-center">
+                        <img src="assets/images/bee-happy.png" alt="">
                     </div>
-                </div>
-                <p class="text-center fs-2">Correct! <br> You scored <br> <span>0</span></p>
-                <div class="image-container text-center">
-                    <img src="assets/images/bee-happy.png" alt="">
-                </div>
-                <div class="d-grid gap-2 m-5">
-                    <button class="btn btn-primary" type="button">Next</button>
-                    <button class="btn btn-primary" type="button">Restart</button>
+                    <div class="d-grid gap-2 m-5">
+                        <button class="btn btn-primary" type="button">Next</button>
+                        <button class="btn btn-primary" type="button">Restart</button>
+                    </div>
                 </div>
             </div>
-        </div>
+        </template>
         <!-- game over screen -->
-        <div id="start-screen" class="row justify-content-sm-center  m-3">
-            <div class="border col-12 col-lg-4 col-md-6 col-sm-8 p-3">
-                <div class="clearfix">
-                    <div class="float-start">
-                        EASY
+        <template>
+            <div id="start-screen" class="row justify-content-sm-center  m-3">
+                <div class="border col-12 col-lg-4 col-md-6 col-sm-8 p-3">
+                    <div class="clearfix">
+                        <div class="float-start">
+                            EASY
+                        </div>
+                        <div class="float-end">
+                            <p class="text-end">score: <span>0</span>
+                                <br>
+                                h-score: <span>0</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="float-end">
-                        <p class="text-end">score: <span>0</span>
-                            <br>
-                            h-score: <span>0</span>
-                        </p>
+                    <p class="text-center fs-2">Game over! <br> The correct answer was: <br> <span>answer</span></p>
+                    <div class="image-container text-center">
+                        <img src="assets/images/bee-sad.png" alt="">
                     </div>
-                </div>
-                <p class="text-center fs-2">Game over! <br> The correct answer was: <br> <span>answer</span></p>
-                <div class="image-container text-center">
-                    <img src="assets/images/bee-sad.png" alt="">
-                </div>
-                <div class="d-grid gap-2 m-5">
-                    <button class="btn btn-primary" type="button">Try again</button>
-                    <button class="btn btn-primary" type="button">Restart</button>
+                    <div class="d-grid gap-2 m-5">
+                        <button class="btn btn-primary" type="button">Try again</button>
+                        <button class="btn btn-primary" type="button">Restart</button>
+                    </div>
                 </div>
             </div>
-        </div>
-    </main>
+        </template>
+    </div>
 
     <!--Bootstrap v5.0-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
