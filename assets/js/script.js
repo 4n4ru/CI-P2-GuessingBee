@@ -1,6 +1,12 @@
 (function () {
 
-    document.addEventListener('DOMContentLoaded', startEasy());
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('start-screen').style.display = 'none';
+        document.getElementById('game-screen').style.display = 'none';
+        document.getElementById('correct-screen').style.display = 'none';
+        document.getElementById('game-over-screen').style.display = 'none';
+        startEasy();
+    });
 
     /**
      * Generates alphabet buttons for the main game screen
@@ -16,16 +22,11 @@
     }
 
     function startEasy() {
-        showStart();
-        document.getElementById('btn-easy').addEventListener('click', showGame('easy'));
-        document.getElementById('btn-normal').addEventListener('click', showGame('normal'));
-        document.getElementById('btn-hard').addEventListener('click', showGame('hard'));
+        document.getElementById('start-screen').style.display = 'flex';
+        document.getElementById('btn-easy').addEventListener('click', playGame('easy'));
+        document.getElementById('btn-normal').addEventListener('click', playGame('normal'));
+        document.getElementById('btn-hard').addEventListener('click', playGame('hard'));
     }
-
-    function showStart() {
-        let clon = document.getElementById('start-screen').content.cloneNode(true);
-        document.body.appendChild(clon);
-      }
 
     function startMedium() {
 
@@ -35,8 +36,8 @@
 
     }
 
-    function showGame() {
-        
+    function playGame() {
+
     }
 
     function getTheme() {
