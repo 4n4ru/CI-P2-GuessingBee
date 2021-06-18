@@ -36,3 +36,7 @@ h1 img {
     width: 60%;
     margin: 0 auto;
 }
+
+#difficulty{
+    text-transform: uppercase;
+}

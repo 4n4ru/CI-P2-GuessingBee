@@ -18,14 +18,42 @@
         'assets/images/flower-medium-4.png',
         'assets/images/flower-medium-5.png',
         'assets/images/flower-medium-6.png'
-    ]
+    ];
 
     let hardImages = [
         'assets/images/flower-hard-1',
         'assets/images/flower-hard-2',
         'assets/images/flower-hard-3',
         'assets/images/flower-hard-4'
-    ]
+    ];
+
+    let phrases = {
+        book: [],
+        movie: [],
+        proverbs: [
+            'A cat has nine lives',
+            'Actions speak louder than words',
+            'All good things come to an end',
+            'An apple a day keeps the doctor away',
+            'A picture is worth a thousand words',
+            'Best things in life are free',
+            'Better late than never',
+            'Blood is thicker than water',
+            'Curiosity killed the cat',
+            'Every dog has his day',
+            'Fortune favors the brave',
+            'Good things come to those who wait',
+            'Ignorance is bliss',
+            'Laughter is the best medicine',
+            'Necessity is the mother of invention',
+            'Once bitten twice shy',
+            'Practice makes perfect',
+            'Slow and steady wins the race',
+            'There is no time like the present'
+        ],
+        'famous person': [],
+        'programing language': []
+    };
 
     let score = 0;
     let hScore = 0;
@@ -73,31 +101,44 @@
         document.getElementById('start-screen').style.display = 'none';
         document.getElementById('game-screen').style.display = 'flex';
     }
+   
+    function getImages(gameType){
+        if (gameType === 'easy') {
+            return easyImages;
+        } else if (gameType === 'normal') {
+            return normalImages;         
+        } else if (gameType === 'hard') {
+            return hardImages;
+        } else {
+            throw new Error(`Images for ${gameType} do not exist.`);
+        }
+    }
 
-    /**
+    function setImage(gameType) {
+        let images = getImages(gameType);
+        document.getElementById('flower-image').src = images[images.length - 1];
+        wrongAnswersLeft = images.length;
+    }
+
+    function setPhrase(theme) {
+        let phrase = getPhrase(theme);
+        let guessingPhrase = generateUnderscores(phrase);
+        document.getElementById('phrase').innerHTML = guessingPhrase;
+    }
+
+     /**
      * Generates the game screen by adding all the content to the html elements
      */
     function generateGameScreen(gameType) {
-        let difficulty = document.getElementById('difficulty');
-        difficulty.innerHTML = gameType;
-        difficulty.style.textTransform = 'uppercase';
+        document.getElementById('difficulty').innerHTML = gameType;
         document.getElementById('score').innerHTML = score;
         document.getElementById('h-score').innerHTML = hScore;
-        let theme = getTheme ();
-        let phrase = getPhrase (theme);
+
+        let theme = getTheme();
         document.getElementById('theme').innerHTML = theme;
-        let guessingPhrase = generateUnderscores(phrase);
-        document.getElementById('phrase').innerHTML = guessingPhrase;
-        if (gameType === 'easy') {
-            document.getElementById('flower-image').src = easyImages[7];
-            wrongAnswersLeft = 8;
-        } else if (gameType === 'normal') {
-            document.getElementById('flower-image').src = normalImages[5];
-            wrongAnswersLeft = 6;
-        } else {
-            document.getElementById('flower-image').src = hardImages[3];
-            wrongAnswersLeft = 4;
-        }
+
+        setPhrase(theme);
+        setImage(gameType);
         generateAbcBtns();
         showGame();
     }
