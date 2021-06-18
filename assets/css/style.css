@@ -40,3 +40,7 @@ h1 img {
 #difficulty{
     text-transform: uppercase;
 }
+
+#phrase {
+    letter-spacing: 0.5rem;
+}

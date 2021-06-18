@@ -21,15 +21,45 @@
     ];
 
     let hardImages = [
-        'assets/images/flower-hard-1',
-        'assets/images/flower-hard-2',
-        'assets/images/flower-hard-3',
-        'assets/images/flower-hard-4'
+        'assets/images/flower-hard-1.png',
+        'assets/images/flower-hard-2.png',
+        'assets/images/flower-hard-3.png',
+        'assets/images/flower-hard-4.png'
     ];
 
     let phrases = {
-        book: [],
-        movie: [],
+        book: [
+            'Pride and Prejudice',
+            'To Kill A Mockingbird',
+            'The Great Gatsby',
+            'One Hundred Years of Solitude',
+            'Brave New World',
+            'Jane Eyre',
+            'Crime and Punishment',
+            'The Call of the Wild',
+            'The Master and Margarita',
+            'The Grapes of Wrath ',
+            ' The Adventures of Huckleberry Finn'
+        ],
+        movie: [
+            'Titanic',
+            'Good Will Hunting',
+            'Lost In Translation',
+            'The Terminator',
+            'The Prestige',
+            'No Country For Old Men',
+            'Indiana Jones And The Last Crusade',
+            'Some Like It Hot',
+            'The Lion King',
+            'Ghostbusters',
+            'Forrest Gump',
+            'The Silence Of The Lambs',
+            'The Big Lebowski',
+            'Jurassic Park',
+            'Back To The Future',
+            'The Shawshank Redemption',
+            'The Empire Strikes Back'
+        ],
         proverbs: [
             'A cat has nine lives',
             'Actions speak louder than words',
@@ -51,8 +81,13 @@
             'Slow and steady wins the race',
             'There is no time like the present'
         ],
-        'famous person': [],
-        'programing language': []
+        'programing language': [
+            'Python',
+            'JavaScript',
+            'Java',
+            'PHP',
+            'Scala',
+        ]
     };
 
     let score = 0;
@@ -147,20 +182,32 @@
      * Randomly picks a theme for the game
      */
     function getTheme() {
-
+        let themes = Object.keys(phrases);
+        let num = Math.floor(Math.random()*themes.length);
+        return themes[num];
     }
     /**
      * Randomly picks a phrase from the given theme
      */
     function getPhrase(theme) {
-
+        let themePhrases = phrases[theme];
+        let num = Math.floor(Math.random()*themePhrases.length);
+        return themePhrases[num];
     }
 
     /**
      * Generates underscores for the Phrase provided 
      */
     function generateUnderscores(phrase) {
-
+        let underscores = ''
+        for (const symbol of phrase) {
+            if (symbol === ' '){
+                underscores += ' ';
+            } else {
+                underscores += '_';
+            }
+        }
+        return underscores;
     }
 
     function checkGuess() {
