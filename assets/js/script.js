@@ -10,8 +10,26 @@
         'assets/images/flower-easy-7.png',
         'assets/images/flower-easy-8.png'
     ];
+
+    let normalImages = [
+        'assets/images/flower-medium-1.png',
+        'assets/images/flower-medium-2.png',
+        'assets/images/flower-medium-3.png',
+        'assets/images/flower-medium-4.png',
+        'assets/images/flower-medium-5.png',
+        'assets/images/flower-medium-6.png'
+    ]
+
+    let hardImages = [
+        'assets/images/flower-hard-1',
+        'assets/images/flower-hard-2',
+        'assets/images/flower-hard-3',
+        'assets/images/flower-hard-4'
+    ]
+
     let score = 0;
     let hScore = 0;
+    let wrongAnswersLeft = 0;
 
     document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('start-screen').style.display = 'none';
@@ -72,10 +90,13 @@
         document.getElementById('phrase').innerHTML = guessingPhrase;
         if (gameType === 'easy') {
             document.getElementById('flower-image').src = easyImages[7];
+            wrongAnswersLeft = 8;
         } else if (gameType === 'normal') {
             document.getElementById('flower-image').src = normalImages[5];
+            wrongAnswersLeft = 6;
         } else {
             document.getElementById('flower-image').src = hardImages[3];
+            wrongAnswersLeft = 4;
         }
         generateAbcBtns();
         showGame();
