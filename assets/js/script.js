@@ -48,11 +48,17 @@
         }
     }
 
+    /**
+     * Show Game screen
+     */
     function showGame() {
         document.getElementById('start-screen').style.display = 'none';
         document.getElementById('game-screen').style.display = 'flex';
     }
 
+    /**
+     * Generates the game screen by adding all the content to the html elements
+     */
     function generateGameScreen(gameType) {
         let difficulty = document.getElementById('difficulty');
         difficulty.innerHTML = gameType;
@@ -75,15 +81,23 @@
         showGame();
     }
 
+    /**
+     * Randomly picks a theme for the game
+     */
     function getTheme() {
 
     }
-
-    function getPhrase() {
+    /**
+     * Randomly picks a phrase from the given theme
+     */
+    function getPhrase(theme) {
 
     }
 
-    function generateUnderscores() {
+    /**
+     * Generates underscores for the Phrase provided 
+     */
+    function generateUnderscores(phrase) {
 
     }
 
