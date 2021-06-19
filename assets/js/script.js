@@ -278,7 +278,7 @@
         if (score > hScore) {
             hScore = score;
         }
-        showCorrectScreen(score);
+        showCorrectScreen();
     }
 
     function outOfMoves() {
@@ -304,7 +304,23 @@
         });
     }
 
-    function showCorrectScreen (score) {
-        alert (`your score is ${score}`);
+    function showCorrectScreen () {
+        document.getElementById('game-screen').style.display = 'none';
+        document.getElementById('correct-screen').style.display = 'flex';
+
+        document.getElementById('score-correct').innerHTML = score;
+        document.getElementById('h-score-correct').innerHTML = hScore;
+        document.getElementById('round-score').innerHTML = score;
+
+        let next = document.getElementById('next');
+        next.addEventListener('click', function (){
+            let gameType = document.getElementById('difficulty').innerHTML;
+            generateGameScreen(gameType);
+        });
+
+        let restart = document.getElementById('restart-correct');
+        restart.addEventListener('click', function(){
+            showStartScreen();
+        });
     }
 })();

@@ -55,31 +55,31 @@
         </div>
         <!-- screen for correct guess -->
         <div id="correct-screen" class="row justify-content-sm-center  m-3">
-            <div class="border col-12 col-lg-4 col-md-6 col-sm-8 p-3">
+            <div class="border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3">
                 <div class="clearfix">
                     <div class="float-start">
                         EASY
                     </div>
                     <div class="float-end">
-                        <p class="text-end">score: <span>0</span>
+                        <p class="text-end">score: <span id="score-correct">0</span>
                             <br>
-                            h-score: <span>0</span>
+                            h-score: <span id="h-score-correct">0</span>
                         </p>
                     </div>
                 </div>
-                <p class="text-center fs-2">Correct! <br> You scored <br> <span>0</span></p>
+                <p class="text-center fs-2">Correct! <br> You scored <br> <span id="round-score">0</span></p>
                 <div class="image-container text-center">
                     <img src="assets/images/bee-happy.png" alt="">
                 </div>
                 <div class="d-grid gap-2 m-5">
-                    <button class="btn btn-primary" type="button">Next</button>
-                    <button class="btn btn-primary" type="button">Restart</button>
+                    <button id="next" class="btn btn-primary" type="button">Next</button>
+                    <button id="restart-correct" class="btn btn-primary" type="button">Restart</button>
                 </div>
             </div>
         </div>
         <!-- game over screen -->
         <div id="game-over-screen" class="row justify-content-sm-center  m-3">
-            <div class="border col-12 col-lg-4 col-md-6 col-sm-8 p-3">
+            <div class="border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3">
                 <div class="clearfix">
                     <div class="difficulty float-start">
                     </div>
