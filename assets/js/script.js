@@ -266,11 +266,16 @@
 
     }
 
-    function checkWordComplete() {
-
+    function checkWordComplete(currentPhrase) {
+        if (currentPhrase === phrase) {
+            correctGuess();
+        } else {
+            return;
+        }
     }
 
     function correctGuess() {
+        alert ('Your guess is correct');
     }
 
     function outOfMoves() {
