@@ -97,12 +97,16 @@
     let images;
 
     document.addEventListener('DOMContentLoaded', function () {
+        hideAllScreens()
+        showStartScreen();
+    });
+
+    function hideAllScreens (){
         document.getElementById('start-screen').style.display = 'none';
         document.getElementById('game-screen').style.display = 'none';
         document.getElementById('correct-screen').style.display = 'none';
         document.getElementById('game-over-screen').style.display = 'none';
-        startScreen();
-    });
+    }
 
     /**
      * Generates alphabet buttons for the main game screen
@@ -132,9 +136,10 @@
     }
 
     /**
-     * Show startScreen and add event listeners to buttons
+     * Show showStartScreen and add event listeners to buttons
      */
-    function startScreen() {
+    function showStartScreen() {
+        hideAllScreens();
         document.getElementById('start-screen').style.display = 'flex';
         let buttons = document.getElementsByClassName('start-btn');
         for (const button of buttons) {
@@ -149,7 +154,7 @@
      * Show Game screen
      */
     function showGame() {
-        document.getElementById('start-screen').style.display = 'none';
+        hideAllScreens();
         document.getElementById('game-screen').style.display = 'flex';
     }
 
@@ -277,7 +282,26 @@
     }
 
     function outOfMoves() {
-        alert('You are out of moves');
+        showGameOver();
+        document.getElementById('score-over').innerHTML = score;
+        document.getElementById('h-score-over').innerHTML = hScore;
+        document.getElementById('answer').innerHTML = phrase;
+    }
+
+    function showGameOver (){
+        document.getElementById('game-screen').style.display = 'none';
+        document.getElementById('game-over-screen').style.display = 'flex';
+
+        let tryAgain = document.getElementById('try-again');
+        tryAgain.addEventListener('click', function (){
+            let gameType = document.getElementById('difficulty').innerHTML;
+            generateGameScreen(gameType);
+        });
+
+        let restart = document.getElementById('restart');
+        restart.addEventListener('click', function(){
+            showStartScreen();
+        });
     }
 
     function showCorrectScreen (score) {
