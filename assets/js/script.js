@@ -139,6 +139,7 @@
      * Show showStartScreen and add event listeners to buttons
      */
     function showStartScreen() {
+        score = 0;
         hideAllScreens();
         document.getElementById('start-screen').style.display = 'flex';
         let buttons = document.getElementsByClassName('start-btn');
