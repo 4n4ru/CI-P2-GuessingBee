@@ -239,7 +239,7 @@
                 let nextFlowerIndex = wrongAnswersLeft - 1;
             nextImage(nextFlowerIndex);
             } else {
-                alert('out of moves');
+                outOfMoves();
             }
         }
     }
@@ -269,18 +269,18 @@
     }
 
     function correctGuess() {
-        alert('Your guess is correct');
+        score += wrongAnswersLeft;
+        if (score > hScore) {
+            hScore = score;
+        }
+        showCorrectScreen(score);
     }
 
     function outOfMoves() {
-
+        alert('You are out of moves');
     }
 
-    function increaseScore() {
-
-    }
-
-    function increaseHighScore() {
-
+    function showCorrectScreen (score) {
+        alert (`your score is ${score}`);
     }
 })();
