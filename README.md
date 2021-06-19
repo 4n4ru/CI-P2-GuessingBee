@@ -125,6 +125,7 @@
 | **Bug** | **Fix** |
 | ----------- | ----------- |
 |  |  |
+- not working for uppercase letters
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:

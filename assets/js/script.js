@@ -108,7 +108,7 @@
      */
 
     function generateAbcBtns() {
-        let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+        let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         let html = '';
         for (const letter of alphabet) {
             html += `<button class="btn-abc btn btn-primary m-1 col-1 p-1">${letter}</button>`;
@@ -230,7 +230,7 @@
      * Checks if the phrase has the letter clicked
      */
     function checkGuess(letter) {
-        if (phrase.includes(letter)){
+        if (phrase.includes(letter) || phrase.includes(letter.toLowerCase())){
             addLetters(letter);
         } else {
             wrongAnswersLeft -= 1;
@@ -238,13 +238,16 @@
         }
     }
 
+    /**
+     * Displays the correctly guessed letters
+     */
     function addLetters(guess) {
         let guessingPhrase = document.getElementById('phrase').innerHTML;
         let newGuessingPhrase = '';
         for (let i = 0; i < phrase.length; i++) {
             const element = phrase[i];
-            if (element === guess){
-                newGuessingPhrase += guess;
+            if (element === guess || element === guess.toLowerCase()){
+                newGuessingPhrase += element;
             } else if (element === ' '){
                 newGuessingPhrase += ' ';
             } else {
@@ -255,6 +258,7 @@
                 }
             }
         }
+        checkWordComplete(newGuessingPhrase);
         document.getElementById('phrase').innerHTML = newGuessingPhrase;
     }
 
@@ -267,7 +271,6 @@
     }
 
     function correctGuess() {
-
     }
 
     function outOfMoves() {
