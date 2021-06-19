@@ -93,6 +93,7 @@
     let score = 0;
     let hScore = 0;
     let wrongAnswersLeft = 0;
+    let phrase = ''
 
     document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('start-screen').style.display = 'none';
@@ -110,9 +111,23 @@
         let alphabet = 'abcdefghijklmnopqrstuvwxyz';
         let html = '';
         for (const letter of alphabet) {
-            html += `<button class="btn btn-primary m-1 col-1 p-1">${letter}</button>`;
+            html += `<button class="btn-abc btn btn-primary m-1 col-1 p-1">${letter}</button>`;
         }
         document.getElementById('abc-btns').innerHTML = html;
+        addAbcListeners();
+    }
+
+    /**
+     * Adds event listeners to alphabet buttons
+     */
+    function addAbcListeners() {
+        let abcButtons = document.getElementsByClassName('btn-abc');
+        for (const button of abcButtons) {
+            button.addEventListener('click', function(){
+                let letter = this.innerHTML;
+                checkGuess(letter);
+            });
+        }
     }
 
     /**
@@ -156,7 +171,7 @@
     }
 
     function setPhrase(theme) {
-        let phrase = getPhrase(theme);
+        phrase = getPhrase(theme);
         let guessingPhrase = generateUnderscores(phrase);
         document.getElementById('phrase').innerHTML = guessingPhrase;
     }
