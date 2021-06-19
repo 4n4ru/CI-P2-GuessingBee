@@ -124,7 +124,7 @@
     function addAbcListeners() {
         let abcButtons = document.getElementsByClassName('btn-abc');
         for (const button of abcButtons) {
-            button.addEventListener('click', function(){
+            button.addEventListener('click', function () {
                 let letter = this.innerHTML;
                 checkGuess(letter);
             });
@@ -152,12 +152,12 @@
         document.getElementById('start-screen').style.display = 'none';
         document.getElementById('game-screen').style.display = 'flex';
     }
-   
-    function getImages(gameType){
+
+    function getImages(gameType) {
         if (gameType === 'easy') {
             return easyImages;
         } else if (gameType === 'normal') {
-            return normalImages;         
+            return normalImages;
         } else if (gameType === 'hard') {
             return hardImages;
         } else {
@@ -177,7 +177,7 @@
         document.getElementById('phrase').innerHTML = guessingPhrase;
     }
 
-     /**
+    /**
      * Generates the game screen by adding all the content to the html elements
      */
     function generateGameScreen(gameType) {
@@ -200,7 +200,7 @@
      */
     function getTheme() {
         let themes = Object.keys(phrases);
-        let num = Math.floor(Math.random()*themes.length);
+        let num = Math.floor(Math.random() * themes.length);
         return themes[num];
     }
     /**
@@ -208,7 +208,7 @@
      */
     function getPhrase(theme) {
         let themePhrases = phrases[theme];
-        let num = Math.floor(Math.random()*themePhrases.length);
+        let num = Math.floor(Math.random() * themePhrases.length);
         return themePhrases[num];
     }
 
@@ -218,7 +218,7 @@
     function generateUnderscores(phrase) {
         let underscores = ''
         for (const symbol of phrase) {
-            if (symbol === ' '){
+            if (symbol === ' ') {
                 underscores += ' ';
             } else {
                 underscores += '_';
@@ -231,7 +231,7 @@
      * Checks if the phrase has the letter clicked
      */
     function checkGuess(letter) {
-        if (phrase.includes(letter) || phrase.includes(letter.toLowerCase())){
+        if (phrase.includes(letter) || phrase.includes(letter.toLowerCase())) {
             addLetters(letter);
         } else {
             wrongAnswersLeft -= 1;
@@ -245,21 +245,9 @@
      */
     function addLetters(guess) {
         let guessingPhrase = document.getElementById('phrase').innerHTML;
-        let newGuessingPhrase = '';
-        for (let i = 0; i < phrase.length; i++) {
-            const element = phrase[i];
-            if (element === guess || element === guess.toLowerCase()){
-                newGuessingPhrase += element;
-            } else if (element === ' '){
-                newGuessingPhrase += ' ';
-            } else {
-                if (guessingPhrase[i] === '_'){
-                    newGuessingPhrase += '_';
-                } else {
-                    newGuessingPhrase += guessingPhrase[i];
-                }
-            }
-        }
+        let newGuessingPhrase = guessingPhrase.split('')
+            .map((x, i) => guess.toLowerCase() === phrase[i].toLocaleLowerCase() ? phrase[i] : x)
+            .join('');
         checkWordComplete(newGuessingPhrase);
         document.getElementById('phrase').innerHTML = newGuessingPhrase;
     }
@@ -277,7 +265,7 @@
     }
 
     function correctGuess() {
-        alert ('Your guess is correct');
+        alert('Your guess is correct');
     }
 
     function outOfMoves() {
