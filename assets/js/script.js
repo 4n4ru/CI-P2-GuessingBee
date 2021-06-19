@@ -188,6 +188,7 @@
         document.getElementById('theme').innerHTML = theme;
 
         setPhrase(theme);
+        console.log(phrase);
         setImage(gameType);
         generateAbcBtns();
         showGame();
@@ -235,11 +236,26 @@
             wrongAnswersLeft -= 1;
             nextImage(wrongAnswersLeft);
         }
-
     }
 
-    function addLetters() {
-
+    function addLetters(guess) {
+        let guessingPhrase = document.getElementById('phrase').innerHTML;
+        let newGuessingPhrase = '';
+        for (let i = 0; i < phrase.length; i++) {
+            const element = phrase[i];
+            if (element === guess){
+                newGuessingPhrase += guess;
+            } else if (element === ' '){
+                newGuessingPhrase += ' ';
+            } else {
+                if (guessingPhrase[i] === '_'){
+                    newGuessingPhrase += '_';
+                } else {
+                    newGuessingPhrase += guessingPhrase[i];
+                }
+            }
+        }
+        document.getElementById('phrase').innerHTML = newGuessingPhrase;
     }
 
     function nextImage() {
