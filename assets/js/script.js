@@ -93,7 +93,8 @@
     let score = 0;
     let hScore = 0;
     let wrongAnswersLeft = 0;
-    let phrase = ''
+    let phrase = '';
+    let images;
 
     document.addEventListener('DOMContentLoaded', function () {
         document.getElementById('start-screen').style.display = 'none';
@@ -165,7 +166,7 @@
     }
 
     function setImage(gameType) {
-        let images = getImages(gameType);
+        images = getImages(gameType);
         document.getElementById('flower-image').src = images[images.length - 1];
         wrongAnswersLeft = images.length;
     }
@@ -234,7 +235,8 @@
             addLetters(letter);
         } else {
             wrongAnswersLeft -= 1;
-            nextImage(wrongAnswersLeft);
+            let nextFlowerIndex = wrongAnswersLeft - 1;
+            nextImage(nextFlowerIndex);
         }
     }
 
@@ -262,8 +264,8 @@
         document.getElementById('phrase').innerHTML = newGuessingPhrase;
     }
 
-    function nextImage() {
-
+    function nextImage(nextFlowerIndex) {
+        document.getElementById('flower-image').src = images[nextFlowerIndex];
     }
 
     function checkWordComplete(currentPhrase) {
