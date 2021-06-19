@@ -225,7 +225,16 @@
         return underscores;
     }
 
-    function checkGuess() {
+    /**
+     * Checks if the phrase has the letter clicked
+     */
+    function checkGuess(letter) {
+        if (phrase.includes(letter)){
+            addLetters(letter);
+        } else {
+            wrongAnswersLeft -= 1;
+            nextImage(wrongAnswersLeft);
+        }
 
     }
 
