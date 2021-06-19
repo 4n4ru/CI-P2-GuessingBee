@@ -235,8 +235,12 @@
             addLetters(letter);
         } else {
             wrongAnswersLeft -= 1;
-            let nextFlowerIndex = wrongAnswersLeft - 1;
+            if (wrongAnswersLeft) {
+                let nextFlowerIndex = wrongAnswersLeft - 1;
             nextImage(nextFlowerIndex);
+            } else {
+                alert('out of moves');
+            }
         }
     }
 
