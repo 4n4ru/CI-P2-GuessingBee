@@ -128,8 +128,9 @@
     function addAbcListeners() {
         let abcButtons = document.getElementsByClassName('btn-abc');
         for (const button of abcButtons) {
-            button.addEventListener('click', function () {
+            button.addEventListener('click', function abcEvent () {
                 let letter = this.innerHTML;
+                button.removeEventListener('click', abcEvent);
                 checkGuess(letter);
             });
         }
