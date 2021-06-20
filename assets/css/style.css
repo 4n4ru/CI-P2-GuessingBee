@@ -14,7 +14,7 @@ body::before {
     bottom: 0;
     right: 0;
     background: url('../images/background.jpg');
-    background-repeat: repeat-x;
+    background-repeat: repeat-x repeat-y;
     background-size: contain;
     opacity: .3;
     content: "";

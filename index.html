@@ -13,16 +13,16 @@
 </head>
 
 <body>
-    <div class="game-container row justify-content-sm-center">
+    <div class="game-container row gx-0 justify-content-sm-center">
         <!--logo and name of game-->
         <div class="text-center col-12 col-lg-4 col-md-6 col-sm-8 p-3 ">
             <h1><img src="assets/images/bee-logo.png" alt=""> Guessing Bee</h1>
         </div>
         <!-- start screen with difficulty choice -->
-        <div id="start-screen" class="row justify-content-sm-center m-3">
+        <div id="start-screen" class="row gx-0 justify-content-sm-center">
             <div class="border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3">
                 <p class="text-center fs-2">Pick dificulty to start the game!</p>
-                <div class="d-grid gap-2 m-5">
+                <div class="d-grid gap-2 mx-5 my-2">
                     <button data-type="easy" class="start-btn btn btn-primary" type="button">Easy</button>
                     <button data-type="normal" class="start-btn btn btn-primary" type="button">Normal</button>
                     <button data-type="hard" class="start-btn btn btn-primary" type="button">Hard</button>
@@ -30,7 +30,7 @@
             </div>
         </div>
         <!-- main game screen -->
-        <div id="game-screen" class="row justify-content-sm-center  m-3">
+        <div id="game-screen" class="row gx-0 justify-content-sm-center">
             <div class="border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3 ">
                 <div class="clearfix">
                     <div id="difficulty" class="float-start">
@@ -54,7 +54,7 @@
             </div>
         </div>
         <!-- screen for correct guess -->
-        <div id="correct-screen" class="row justify-content-sm-center  m-3">
+        <div id="correct-screen" class="row gx-0 justify-content-sm-center">
             <div class="border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3">
                 <div class="clearfix">
                     <div class="float-start">
@@ -71,14 +71,14 @@
                 <div class="image-container text-center">
                     <img src="assets/images/bee-happy.png" alt="">
                 </div>
-                <div class="d-grid gap-2 m-5">
+                <div class="d-grid gap-2 mx-5 my-2">
                     <button id="next" class="btn btn-primary" type="button">Next</button>
                     <button id="restart-correct" class="btn btn-primary" type="button">Restart</button>
                 </div>
             </div>
         </div>
         <!-- game over screen -->
-        <div id="game-over-screen" class="row justify-content-sm-center  m-3">
+        <div id="game-over-screen" class="row gx-0 justify-content-sm-center">
             <div class="border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3">
                 <div class="clearfix">
                     <div class="difficulty float-start">
@@ -94,7 +94,7 @@
                 <div class="image-container text-center">
                     <img src="assets/images/bee-sad.png" alt="">
                 </div>
-                <div class="d-grid gap-2 m-5">
+                <div class="d-grid gap-2 mx-5 my-2">
                     <button id="try-again" class="btn btn-primary" type="button">Try again</button>
                     <button id="restart" class="btn btn-primary" type="button">Restart</button>
                 </div>
