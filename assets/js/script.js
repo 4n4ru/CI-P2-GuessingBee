@@ -130,6 +130,7 @@
         for (const button of abcButtons) {
             button.addEventListener('click', function abcEvent () {
                 let letter = this.innerHTML;
+                button.className = 'btn-abc btn btn-secondary m-1 col-1 p-1';
                 button.removeEventListener('click', abcEvent);
                 checkGuess(letter);
             });
