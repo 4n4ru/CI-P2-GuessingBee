@@ -297,6 +297,7 @@
 
         let tryAgain = document.getElementById('try-again');
         tryAgain.addEventListener('click', function (){
+            score = 0;
             let gameType = document.getElementById('difficulty').innerHTML;
             generateGameScreen(gameType);
         });
