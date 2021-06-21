@@ -97,17 +97,20 @@
     let images;
 
     document.addEventListener('DOMContentLoaded', function () {
-        hideAllScreens()
         showStartScreen();
     });
 
-    function hideAllScreens (){
-        document.getElementById('start-screen').style.display = 'none';
-        document.getElementById('game-screen').style.display = 'none';
-        document.getElementById('correct-screen').style.display = 'none';
-        document.getElementById('game-over-screen').style.display = 'none';
+    function showScreen (id){
+        let screenIds = ['start-screen', 'game-screen', 'correct-screen', 'game-over-screen'];
+        for (const screenId of screenIds) {
+            toggleScreen(screenId, (screenId === id));
+        }
     }
 
+    function toggleScreen(id, isActive) {
+        document.getElementById(id).style.display = isActive ? 'flex' : 'none';
+    }
+ 
     /**
      * Generates alphabet buttons for the main game screen
      */
@@ -128,7 +131,7 @@
     function addAbcListeners() {
         let abcButtons = document.getElementsByClassName('btn-abc');
         for (const button of abcButtons) {
-            button.addEventListener('click', function abcEvent () {
+            button.addEventListener('click', function abcEvent() {
                 let letter = this.innerHTML;
                 button.className = 'btn-abc btn btn-secondary m-1 col-1 p-1';
                 button.removeEventListener('click', abcEvent);
@@ -142,8 +145,7 @@
      */
     function showStartScreen() {
         score = 0;
-        hideAllScreens();
-        document.getElementById('start-screen').style.display = 'flex';
+        showScreen('start-screen');
         let buttons = document.getElementsByClassName('start-btn');
         for (const button of buttons) {
             button.addEventListener('click', function () {
@@ -151,14 +153,6 @@
                 generateGameScreen(gameType);
             });
         }
-    }
-
-    /**
-     * Show Game screen
-     */
-    function showGame() {
-        hideAllScreens();
-        document.getElementById('game-screen').style.display = 'flex';
     }
 
     function getImages(gameType) {
@@ -200,7 +194,7 @@
         console.log(phrase);
         setImage(gameType);
         generateAbcBtns();
-        showGame();
+        showScreen('game-screen')
     }
 
     /**
@@ -245,7 +239,7 @@
             wrongAnswersLeft -= 1;
             if (wrongAnswersLeft) {
                 let nextFlowerIndex = wrongAnswersLeft - 1;
-            nextImage(nextFlowerIndex);
+                nextImage(nextFlowerIndex);
             } else {
                 outOfMoves();
             }
@@ -291,39 +285,37 @@
         document.getElementById('answer').innerHTML = phrase;
     }
 
-    function showGameOver (){
-        document.getElementById('game-screen').style.display = 'none';
-        document.getElementById('game-over-screen').style.display = 'flex';
+    function showGameOver() {
+        showScreen('game-over-screen');
 
         let tryAgain = document.getElementById('try-again');
-        tryAgain.addEventListener('click', function (){
+        tryAgain.addEventListener('click', function () {
             score = 0;
             let gameType = document.getElementById('difficulty').innerHTML;
             generateGameScreen(gameType);
         });
 
         let restart = document.getElementById('restart');
-        restart.addEventListener('click', function(){
+        restart.addEventListener('click', function () {
             showStartScreen();
         });
     }
 
-    function showCorrectScreen () {
-        document.getElementById('game-screen').style.display = 'none';
-        document.getElementById('correct-screen').style.display = 'flex';
+    function showCorrectScreen() {
+        showScreen('correct-screen');
 
         document.getElementById('score-correct').innerHTML = score;
         document.getElementById('h-score-correct').innerHTML = hScore;
         document.getElementById('round-score').innerHTML = score;
 
         let next = document.getElementById('next');
-        next.addEventListener('click', function (){
+        next.addEventListener('click', function () {
             let gameType = document.getElementById('difficulty').innerHTML;
             generateGameScreen(gameType);
         });
 
         let restart = document.getElementById('restart-correct');
-        restart.addEventListener('click', function(){
+        restart.addEventListener('click', function () {
             showStartScreen();
         });
     }
