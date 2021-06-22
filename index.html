@@ -91,13 +91,14 @@
                         <div class="difficulty float-start">
                         </div>
                         <div class="float-end">
-                            <p class="text-end">score: <span id = "score-over"></span>
+                            <p class="text-end">score: <span id="score-over"></span>
                                 <br>
-                                h-score: <span id = "h-score-over"></span>
+                                h-score: <span id="h-score-over"></span>
                             </p>
                         </div>
                     </div>
-                    <p class="text-center fs-2">Game over! <br> The correct answer was: <br> <span id=answer>answer</span></p>
+                    <p class="text-center fs-2">Game over! <br> The correct answer was: <br> <span
+                            id=answer>answer</span></p>
                     <div class="image-container text-center">
                         <img src="assets/images/bee-sad.png" alt="">
                     </div>
@@ -109,7 +110,30 @@
             </div>
         </div>
     </div>
-
+    <!-- modal that explains how to play the game -->
+    <div class="modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">How to play</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Play the classic Hangman game, but with a twist! <br>
+                        Today, no-one gets hanged. Instead we are going to try to help some bees.
+                        Save the flowers to make the bees happy. <br>
+                        Pick a difficulty, easy for up to 8, normal up to 6, and hard up to 4 errors. <br>
+                        The game is played by picking letters and trying to guess the phrase before you run out of
+                        moves. <br>
+                        Good luck!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Bootstrap v5.0-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
