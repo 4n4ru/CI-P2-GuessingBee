@@ -95,12 +95,14 @@
     let wrongAnswersLeft = 0;
     let phrase = '';
     let images;
+    let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let keysClickedBefore = [];
 
     document.addEventListener('DOMContentLoaded', function () {
         showStartScreen();
     });
 
-    function showScreen (id){
+    function showScreen(id) {
         let screenIds = ['start-screen', 'game-screen', 'correct-screen', 'game-over-screen'];
         for (const screenId of screenIds) {
             toggleScreen(screenId, (screenId === id));
@@ -110,16 +112,15 @@
     function toggleScreen(id, isActive) {
         document.getElementById(id).style.display = isActive ? 'flex' : 'none';
     }
- 
+
     /**
      * Generates alphabet buttons for the main game screen
      */
 
     function generateAbcBtns() {
-        let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
         let html = '';
         for (const letter of alphabet) {
-            html += `<button class="btn-abc btn btn-primary m-1 col-1 p-1">${letter}</button>`;
+            html += `<button class="btn-abc btn btn-primary m-1 col-1 p-1" id="btn-${letter}">${letter}</button>`;
         }
         document.getElementById('abc-btns').innerHTML = html;
         addAbcListeners();
@@ -138,6 +139,17 @@
                 checkGuess(letter);
             });
         }
+        document.addEventListener('keydown', function logKey(event) {
+            let name = event.key.toUpperCase();
+            if (alphabet.includes(name) && !keysClickedBefore.includes(name)) {
+                keysClickedBefore.push(name);
+                let button = document.getElementById(`btn-${name}`);
+                button.className = 'btn-abc btn btn-secondary m-1 col-1 p-1';
+                checkGuess(name);
+            } else {
+                return;
+            }
+        });
     }
 
     /**
