@@ -39,7 +39,7 @@
             'The Call of the Wild',
             'The Master and Margarita',
             'The Grapes of Wrath ',
-            //'The Adventures of Huckleberry Finn'
+            'The Adventures of Huckleberry Finn'
         ],
         movie: [
             'Titanic',
@@ -299,7 +299,7 @@
         if (score > hScore) {
             hScore = score;
         }
-        showCorrectScreen();
+        showCorrectScreen(wrongAnswersLeft);
     }
 
     function outOfMoves() {
@@ -325,12 +325,12 @@
         });
     }
 
-    function showCorrectScreen() {
+    function showCorrectScreen(roundScore) {
         showScreen('correct-screen');
 
         document.getElementById('score-correct').innerHTML = score;
         document.getElementById('h-score-correct').innerHTML = hScore;
-        document.getElementById('round-score').innerHTML = score;
+        document.getElementById('round-score').innerHTML = roundScore;
 
         let next = document.getElementById('next');
         next.addEventListener('click', function () {
