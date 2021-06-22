@@ -96,7 +96,7 @@
     let phrase = '';
     let images;
     let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    let keysClickedBefore = [];
+    let keysClickedBefore = '';
 
     document.addEventListener('DOMContentLoaded', function () {
         showStartScreen();
@@ -142,7 +142,7 @@
         document.addEventListener('keydown', function logKey(event) {
             let name = event.key.toUpperCase();
             if (alphabet.includes(name) && !keysClickedBefore.includes(name)) {
-                keysClickedBefore.push(name);
+                keysClickedBefore += name;
                 let button = document.getElementById(`btn-${name}`);
                 button.className = 'btn-abc btn btn-secondary m-1 col-1 p-1';
                 checkGuess(name);
@@ -195,6 +195,7 @@
      * Generates the game screen by adding all the content to the html elements
      */
     function generateGameScreen(gameType) {
+        keysClickedBefore = '';
         document.getElementById('difficulty').innerHTML = gameType;
         document.getElementById('score').innerHTML = score;
         document.getElementById('h-score').innerHTML = hScore;
