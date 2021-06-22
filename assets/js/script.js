@@ -134,10 +134,10 @@
         for (const button of abcButtons) {
             button.addEventListener('click', function () {
                 let letter = this.innerHTML;
-                if (!keysClickedBefore.includes(letter)){
-                button.className = 'btn-abc btn btn-secondary m-1 col-1 p-1';
-                keysClickedBefore += letter;
-                checkGuess(letter);
+                if (!keysClickedBefore.includes(letter)) {
+                    button.className = 'btn-abc btn btn-secondary m-1 col-1 p-1';
+                    keysClickedBefore += letter;
+                    checkGuess(letter);
                 }
             });
         }
@@ -191,10 +191,21 @@
         document.getElementById('phrase').innerHTML = guessingPhrase;
     }
 
+    function showHowToPlayModal() {
+        const key = 'howToPlayModalDisplayed';
+        if (!sessionStorage.getItem(key)) {
+            let howToPlayModal = new bootstrap.Modal(document.getElementById('how-to-play-modal'));
+            howToPlayModal.show();
+            sessionStorage.setItem(key, true);
+        }
+    }
+
     /**
      * Generates the game screen by adding all the content to the html elements
      */
     function generateGameScreen(gameType) {
+        showHowToPlayModal();
+
         keysClickedBefore = '';
         document.getElementById('difficulty').innerHTML = gameType;
         document.getElementById('score').innerHTML = score;
