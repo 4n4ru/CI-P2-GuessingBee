@@ -13,90 +13,98 @@
 </head>
 
 <body>
-    <div class="game-container row gx-0 justify-content-sm-center mb-2">
+    <div class="row gx-0 justify-content-sm-center mb-2">
         <!--logo and name of game-->
         <div class="text-center col-12 col-lg-4 col-md-6 col-sm-8 p-3 ">
             <h1><img src="assets/images/bee-logo.png" alt=""> Guessing Bee</h1>
         </div>
         <!-- start screen with difficulty choice -->
-        <div id="start-screen" class="row gx-0 justify-content-sm-center">
-            <div class="border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3">
-                <p class="text-center fs-2">Pick dificulty to start the game!</p>
-                <div class="d-grid gap-2 mx-5 my-2">
-                    <button data-type="easy" class="start-btn btn btn-primary" type="button">Easy</button>
-                    <button data-type="normal" class="start-btn btn btn-primary" type="button">Normal</button>
-                    <button data-type="hard" class="start-btn btn btn-primary" type="button">Hard</button>
+        <div id="start-screen" class="game-container row gx-0 justify-content-sm-center">
+            <div class="row border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3 align-items-center">
+                <div>
+                    <p class="text-center fs-2">Pick dificulty to start the game!</p>
+                    <div class="row gap-2 my-2 justify-content-center">
+                        <button data-type="easy" class="start-btn btn btn-primary col-6" type="button">Easy</button>
+                        <button data-type="normal" class="start-btn btn btn-primary col-6" type="button">Normal</button>
+                        <button data-type="hard" class="start-btn btn btn-primary col-6" type="button">Hard</button>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- main game screen -->
-        <div id="game-screen" class="row gx-0 justify-content-sm-center">
-            <div class="border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3">
-                <div class="clearfix">
-                    <div id="difficulty" class="float-start">
+        <div id="game-screen" class="game-container row gx-0 justify-content-sm-center">
+            <div class="row border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3 align-items-center">
+                <div>
+                    <div class="clearfix">
+                        <div id="difficulty" class="float-start">
+                        </div>
+                        <div class="float-end">
+                            <p class="text-end">score: <span id="score">0</span>
+                                <br>
+                                h-score: <span id="h-score">0</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="float-end">
-                        <p class="text-end">score: <span id="score">0</span>
-                            <br>
-                            h-score: <span id="h-score">0</span>
-                        </p>
+                    <div class="image-container">
+                        <img id="flower-image" src="" alt="">
                     </div>
-                </div>
-                <div class="image-container text-center">
-                    <img id="flower-image" src="" alt="">
-                </div>
-                <div id="theme">
-                </div>
-                <div id="phrase" class="text-center fs-1 font-monospace">
-                </div>
-                <div id="abc-btns" class="text-center">
+                    <div id="theme">
+                    </div>
+                    <div id="phrase" class="text-center fs-2 font-monospace mb-2">
+                    </div>
+                    <div id="abc-btns" class="text-center">
+                    </div>
                 </div>
             </div>
         </div>
         <!-- screen for correct guess -->
-        <div id="correct-screen" class="row gx-0 justify-content-sm-center">
-            <div class="border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3">
-                <div class="clearfix">
-                    <div class="float-start">
-                        EASY
+        <div id="correct-screen" class="game-container row gx-0 justify-content-sm-center">
+            <div class="row border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3 align-items-center">
+                <div>
+                    <div class="clearfix">
+                        <div class="float-start">
+                            EASY
+                        </div>
+                        <div class="float-end">
+                            <p class="text-end">score: <span id="score-correct">0</span>
+                                <br>
+                                h-score: <span id="h-score-correct">0</span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="float-end">
-                        <p class="text-end">score: <span id="score-correct">0</span>
-                            <br>
-                            h-score: <span id="h-score-correct">0</span>
-                        </p>
+                    <p class="text-center fs-2">Correct! <br> You scored <br> <span id="round-score">0</span></p>
+                    <div class="image-container text-center">
+                        <img src="assets/images/bee-happy.png" alt="">
                     </div>
-                </div>
-                <p class="text-center fs-2">Correct! <br> You scored <br> <span id="round-score">0</span></p>
-                <div class="image-container text-center">
-                    <img src="assets/images/bee-happy.png" alt="">
-                </div>
-                <div class="d-grid gap-2 mx-5 my-2">
-                    <button id="next" class="btn btn-primary" type="button">Next</button>
-                    <button id="restart-correct" class="btn btn-primary" type="button">Restart</button>
+                    <div class="d-grid gap-2 mx-5 my-2">
+                        <button id="next" class="btn btn-primary" type="button">Next</button>
+                        <button id="restart-correct" class="btn btn-primary" type="button">Restart</button>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- game over screen -->
-        <div id="game-over-screen" class="row gx-0 justify-content-sm-center">
-            <div class="border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3">
-                <div class="clearfix">
-                    <div class="difficulty float-start">
+        <div id="game-over-screen" class="game-container row gx-0 justify-content-sm-center">
+            <div class="row border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3 align-items-center">
+                <div>
+                    <div class="clearfix">
+                        <div class="difficulty float-start">
+                        </div>
+                        <div class="float-end">
+                            <p class="text-end">score: <span id = "score-over"></span>
+                                <br>
+                                h-score: <span id = "h-score-over"></span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="float-end">
-                        <p class="text-end">score: <span id = "score-over"></span>
-                            <br>
-                            h-score: <span id = "h-score-over"></span>
-                        </p>
+                    <p class="text-center fs-2">Game over! <br> The correct answer was: <br> <span id=answer>answer</span></p>
+                    <div class="image-container text-center">
+                        <img src="assets/images/bee-sad.png" alt="">
                     </div>
-                </div>
-                <p class="text-center fs-2">Game over! <br> The correct answer was: <br> <span id=answer>answer</span></p>
-                <div class="image-container text-center">
-                    <img src="assets/images/bee-sad.png" alt="">
-                </div>
-                <div class="d-grid gap-2 mx-5 my-2">
-                    <button id="try-again" class="btn btn-primary" type="button">Try again</button>
-                    <button id="restart" class="btn btn-primary" type="button">Restart</button>
+                    <div class="d-grid gap-2 mx-5 my-2">
+                        <button id="try-again" class="btn btn-primary" type="button">Try again</button>
+                        <button id="restart" class="btn btn-primary" type="button">Restart</button>
+                    </div>
                 </div>
             </div>
         </div>

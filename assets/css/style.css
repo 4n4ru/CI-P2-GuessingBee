@@ -14,11 +14,15 @@ body::before {
     bottom: 0;
     right: 0;
     background: url('../images/background.jpg');
-    background-repeat: repeat-x repeat-y;
+    background-repeat: repeat;
     background-size: contain;
     opacity: .3;
     content: "";
     z-index: -1;
+}
+
+.game-container {
+    height: 83vh;
 }
 
 img {
