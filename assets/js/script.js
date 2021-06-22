@@ -39,7 +39,7 @@
             'The Call of the Wild',
             'The Master and Margarita',
             'The Grapes of Wrath ',
-            ' The Adventures of Huckleberry Finn'
+            'The Adventures of Huckleberry Finn'
         ],
         movie: [
             'Titanic',
@@ -64,8 +64,6 @@
             'A cat has nine lives',
             'Actions speak louder than words',
             'All good things come to an end',
-            'An apple a day keeps the doctor away',
-            'A picture is worth a thousand words',
             'Best things in life are free',
             'Better late than never',
             'Blood is thicker than water',
@@ -75,7 +73,6 @@
             'Good things come to those who wait',
             'Ignorance is bliss',
             'Laughter is the best medicine',
-            'Necessity is the mother of invention',
             'Once bitten twice shy',
             'Practice makes perfect',
             'Slow and steady wins the race',
