@@ -132,11 +132,13 @@
     function addAbcListeners() {
         let abcButtons = document.getElementsByClassName('btn-abc');
         for (const button of abcButtons) {
-            button.addEventListener('click', function abcEvent() {
+            button.addEventListener('click', function () {
                 let letter = this.innerHTML;
+                if (!keysClickedBefore.includes(letter)){
                 button.className = 'btn-abc btn btn-secondary m-1 col-1 p-1';
-                button.removeEventListener('click', abcEvent);
+                keysClickedBefore += letter;
                 checkGuess(letter);
+                }
             });
         }
         document.addEventListener('keydown', function logKey(event) {
@@ -146,8 +148,6 @@
                 let button = document.getElementById(`btn-${name}`);
                 button.className = 'btn-abc btn btn-secondary m-1 col-1 p-1';
                 checkGuess(name);
-            } else {
-                return;
             }
         });
     }
