@@ -96,7 +96,6 @@
     let phrase = '';
     let images;
     let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    let keysClickedBefore = '';
 
     document.addEventListener('DOMContentLoaded', function () {
         showStartScreen();
@@ -130,23 +129,22 @@
      * Adds event listeners to alphabet buttons
      */
     function addAbcListeners() {
-        let abcButtons = document.getElementsByClassName('btn-abc');
-        for (const button of abcButtons) {
-            button.addEventListener('click', function () {
-                let letter = this.innerHTML;
-                if (!keysClickedBefore.includes(letter)) {
-                    button.className = 'btn-abc btn btn-secondary m-1 col-1 p-1';
-                    keysClickedBefore += letter;
-                    checkGuess(letter);
-                }
-            });
-        }
+        document.getElementById('abc-btns').addEventListener('click', function (event) {
+            if (!event.target.className.includes('btn')) return;
+            let button = event.target;
+            let letter = button.innerHTML;
+            if (!button.className.includes('clicked')) {
+                button.classList.remove('btn-primary');
+                button.classList.add('btn-secondary', 'clicked');
+                checkGuess(letter);
+            }
+        });
         document.addEventListener('keydown', function logKey(event) {
             let name = event.key.toUpperCase();
-            if (alphabet.includes(name) && !keysClickedBefore.includes(name)) {
-                keysClickedBefore += name;
-                let button = document.getElementById(`btn-${name}`);
-                button.className = 'btn-abc btn btn-secondary m-1 col-1 p-1';
+            let button = document.getElementById(`btn-${name}`);
+            if (alphabet.includes(name) && !button.className.includes('clicked')) {
+                button.classList.remove('btn-primary');
+                button.classList.add('btn-secondary', 'clicked');
                 checkGuess(name);
             }
         });
@@ -206,7 +204,6 @@
     function generateGameScreen(gameType) {
         showHowToPlayModal();
 
-        keysClickedBefore = '';
         document.getElementById('difficulty').innerHTML = gameType;
         document.getElementById('score').innerHTML = score;
         document.getElementById('h-score').innerHTML = hScore;
@@ -218,7 +215,7 @@
         console.log(phrase);
         setImage(gameType);
         generateAbcBtns();
-        showScreen('game-screen')
+        showScreen('game-screen');
     }
 
     /**
@@ -242,7 +239,7 @@
      * Generates underscores for the Phrase provided 
      */
     function generateUnderscores(phrase) {
-        let underscores = ''
+        let underscores = '';
         for (const symbol of phrase) {
             if (symbol === ' ') {
                 underscores += ' ';
