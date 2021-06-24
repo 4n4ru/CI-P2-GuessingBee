@@ -79,8 +79,7 @@
         wrongAnswersLeft = images.length;
     }
 
-    function setPhrase(theme) {
-        phrase = gameSettings.getPhrase(theme);
+    function setGuessingPhrase(phrase) {
         let guessingPhrase = generateUnderscores(phrase);
         document.getElementById('phrase').innerHTML = guessingPhrase;
     }
@@ -104,10 +103,11 @@
         document.getElementById('score').innerHTML = score;
         document.getElementById('h-score').innerHTML = hScore;
 
-        let theme = gameSettings.getTheme();
-        document.getElementById('theme').innerHTML = theme;
-
-        setPhrase(theme);
+        let guessingParameters = gameSettings.getGuessingParameters();
+        phrase = guessingParameters.phrase
+        document.getElementById('theme').innerHTML = guessingParameters.theme;
+        
+        setGuessingPhrase(phrase);
         console.log(phrase);
         setImage(gameType);
         generateAbcBtns();

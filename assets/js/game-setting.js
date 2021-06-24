@@ -101,6 +101,12 @@ let gameSettings = (function () {
         }
     }
 
+    function getGuessingParameters(){
+        let theme = getTheme();
+        let phrase = getPhrase(theme);
+        return {theme, phrase};
+    }
+
     /**
      * Randomly picks a theme for the game
      */
@@ -121,7 +127,6 @@ let gameSettings = (function () {
 
     return {
         getImages,
-        getPhrase,
-        getTheme
+        getGuessingParameters
     };
 })();
