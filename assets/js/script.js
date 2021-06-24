@@ -156,13 +156,12 @@
     function showStartScreen() {
         score = 0;
         showScreen('start-screen');
-        let buttons = document.getElementsByClassName('start-btn');
-        for (const button of buttons) {
-            button.addEventListener('click', function () {
-                let gameType = this.getAttribute('data-type');
-                generateGameScreen(gameType);
-            });
-        }
+        document.getElementById('start-btns').addEventListener('click', function (event){
+            if (!event.target.className.includes('btn')) return;
+            let button = event.target;
+            let gameType = button.getAttribute('data-type');
+            generateGameScreen(gameType);
+        });
     }
 
     function getImages(gameType) {
