@@ -51,7 +51,9 @@ Guessing bee is a clasic Hangman game with a twist. Instead of hanging the clasi
 ## User Experience
 
 ### Target Audience
-- 
+- casual gamers
+- people who like word games
+- people looking for a quick and easy yet engaging game 
 
 ### User Requrements and Expectations
 
