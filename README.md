@@ -46,6 +46,7 @@ Guessing bee is a clasic Hangman game with a twist. Instead of hanging the clasi
 
 ### Site Owner Goals
 - Creating a fun and engaging game that users will want to play again and again.
+- The game should be fully responsive to be able to be played on different devices.
 
 ## User Experience
 
@@ -62,6 +63,7 @@ Guessing bee is a clasic Hangman game with a twist. Instead of hanging the clasi
 5. As a user, I want feedback on my correct answers
 6. As a site owner, I want for the user to be able to share the game with friends
 7. As a site owner, I want for users to be able to make suggestions for new phrases.
+8. As a site owner, I want users to have the option to play the game on multiple different devices. 
 
 ## Design
 
