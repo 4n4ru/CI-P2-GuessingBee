@@ -104,7 +104,7 @@
         document.getElementById('h-score').innerHTML = hScore;
 
         let guessingParameters = gameSettings.getGuessingParameters();
-        phrase = guessingParameters.phrase
+        phrase = guessingParameters.phrase;
         document.getElementById('theme').innerHTML = guessingParameters.theme;
         
         setGuessingPhrase(phrase);
