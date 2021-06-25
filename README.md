@@ -78,6 +78,14 @@ The game was designed to have a calming and relaxing effect on the user. Instead
 For the fonts, Bootstrap's Native font stack was used. The phrase that is to be guessed monospace is used to avoid the words jumping form one line to the next and back depending on the guessed letter. 
 
 ### Structure
+The page is structured in a user friendly and easy to learn way. Upon arriving to the website the user sees a screen with the option to choose a difficulty for the game. The website consists of two separate pages:
+
+- A homepage with 4 different views:
+    - one for selecting a dificulty
+    - one for playing the game
+    - one that is shown after a correct guess
+    - one that is shown after the user runs out of moves
+- A contac form with options to send feedback or suggest phrases to be added to the game
 
 ### Wireframes
 
