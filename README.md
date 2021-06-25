@@ -111,6 +111,21 @@ The page is structured in a user friendly and easy to learn way. Upon arriving t
 - JavaScript
 
 ### Frameworks & Tools
+- Bootstrap v5.0
+- Git
+- GitHub
+- Gitpod
+- Tinypng
+- Paint.NET
+- Balsamiq
+- Font Awsome
+- Favicon.io
+- JSHint
+- Lighthouse
+- W3C Markup validation service
+- W3C Jigsaw CSS validation service 
+- WAVE WebAIM web accessibility evaluation tool
+- EmailJS
 
 ## Features
 
