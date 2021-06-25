@@ -70,6 +70,7 @@ Guessing bee is a clasic Hangman game with a twist. Instead of hanging the clasi
 ## Design
 
 ### Design Choices
+The game was designed to have a calming and relaxing effect on the user. Instead of the classic stickfigure being hanged, the game uses flowers that lose petals. By doing so the negative connotation of the game being morbid or offensive is removed.
 
 ### Colour
 
