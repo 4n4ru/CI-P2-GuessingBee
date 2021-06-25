@@ -38,15 +38,19 @@
 11. [Acknowledgements](#acknowledgements)
 
 ## Project Goals 
-
+Guessing bee is a clasic Hangman game with a twist. Instead of hanging the clasic stickfigure, it's time to rescue some flowers so the bees can be happy!
 
 ### User Goals
+- Play a fun and engaging word guessing game
+- Test your general knowledge by guessing different phrases 
 
 ### Site Owner Goals
+- Creating a fun and engaging game that users will want to play again and again.
 
 ## User Experience
 
 ### Target Audience
+- 
 
 ### User Requrements and Expectations
 
