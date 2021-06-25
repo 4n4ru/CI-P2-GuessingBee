@@ -39,6 +39,7 @@
 
 ## Project Goals 
 
+
 ### User Goals
 
 ### Site Owner Goals
@@ -50,12 +51,13 @@
 ### User Requrements and Expectations
 
 ### User Stories
-
-#### First-time User 
-
-#### Returning User
-
-#### Site Owner 
+1. As a user, I want to be able to pick a difficulty for the game
+2. As a user, I want to test my general knowledge by guessing different phrases
+3. As a user, I want to to be able to pick the letters both by clicking the mouse and by using the keyboard
+4. As a user, I want to know what the correct phrase was in case I don't guess it correctly
+5. As a user, I want feedback on my correct answers
+6. As a site owner, I want for the user to be able to share the game with friends
+7. As a site owner, I want for users to be able to make suggestions for new phrases.
 
 ## Design
 
