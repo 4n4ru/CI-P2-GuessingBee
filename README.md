@@ -192,6 +192,7 @@ In order of apearance:
 
 ### Code
 - CSS for background image opacity https://css-tricks.com/snippets/css/transparent-background-images/
+- HTML for the modals https://getbootstrap.com/docs/5.0/components/modal/#live-demo
 
 ## Acknowledgements
 I would like to take the opportunity to thank:
