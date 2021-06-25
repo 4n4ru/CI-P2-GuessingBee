@@ -75,6 +75,7 @@ The game was designed to have a calming and relaxing effect on the user. Instead
 ### Colour
 
 ### Fonts
+For the fonts, Bootstrap's Native font stack was used. The phrase that is to be guessed monospace is used to avoid the words jumping form one line to the next and back depending on the guessed letter. 
 
 ### Structure
 
