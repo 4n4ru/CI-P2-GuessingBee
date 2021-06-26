@@ -25,6 +25,28 @@ body::before {
     height: 83vh;
 }
 
+.start-btn,
+.btn-abc, 
+.restart-btn, 
+.next-btn, 
+.try-again-btn,
+.modal-btn {
+    color: black;
+    background-color: #dca7aa;
+    border-color: #cc7d88;
+}
+
+.start-btn:hover, 
+.btn-abc:hover,
+.restart-btn:hover, 
+.next-btn:hover, 
+.try-again-btn:hover,
+.modal-btn:hover {
+    color: black;
+    background-color: #e1be9e;
+    border-color: #cc7d88;
+}
+
 img {
     height: 100%;
     width: 100%;
