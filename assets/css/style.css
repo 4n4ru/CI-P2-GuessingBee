@@ -30,7 +30,8 @@ body::before {
 .restart-btn, 
 .next-btn, 
 .try-again-btn,
-.modal-btn {
+.modal-btn,
+.return-btn {
     color: black;
     background-color: #dca7aa;
     border-color: #cc7d88;
@@ -41,7 +42,8 @@ body::before {
 .restart-btn:hover, 
 .next-btn:hover, 
 .try-again-btn:hover,
-.modal-btn:hover {
+.modal-btn:hover,
+.return-btn:hover {
     color: black;
     background-color: #e1be9e;
     border-color: #cc7d88;
