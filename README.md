@@ -73,6 +73,9 @@ Guessing bee is a clasic Hangman game with a twist. Instead of hanging the clasi
 The game was designed to have a calming and relaxing effect on the user. Instead of the classic stickfigure being hanged, the game uses flowers that lose petals. By doing so the negative connotation of the game being morbid or offensive is removed.
 
 ### Colour
+The color palete was chosen to match the flowery theme of the background image. A color picker was used to pick colors from the background image, these colors where then further ajusted to meet accesibility criteria. 
+
+![Colour palette](docs/features/color-palette.jpg)
 
 ### Fonts
 For the fonts, Bootstrap's Native font stack was used. The phrase that is to be guessed monospace is used to avoid the words jumping form one line to the next and back depending on the guessed letter. 
