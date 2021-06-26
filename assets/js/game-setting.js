@@ -59,7 +59,7 @@ let gameSettings = (function () {
             'The Shawshank Redemption',
             'The Empire Strikes Back'
         ],
-        proverbs: [
+        proverb: [
             'A cat has nine lives',
             'Actions speak louder than words',
             'All good things come to an end',
