@@ -26,7 +26,7 @@ body::before {
 }
 
 .start-btn,
-.btn-abc, 
+.my-btn, 
 .restart-btn, 
 .next-btn, 
 .try-again-btn,
@@ -37,8 +37,8 @@ body::before {
     border-color: #cc7d88;
 }
 
-.start-btn:hover, 
-.btn-abc:hover,
+.start-btn:hover,
+.my-btn:hover,
 .restart-btn:hover, 
 .next-btn:hover, 
 .try-again-btn:hover,

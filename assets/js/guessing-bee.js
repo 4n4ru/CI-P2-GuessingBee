@@ -28,7 +28,7 @@
     function generateAbcBtns() {
         let html = '';
         for (const letter of alphabet) {
-            html += `<button class="btn-abc btn btn-primary m-1 col-1 p-1" id="btn-${letter}">${letter}</button>`;
+            html += `<button class="my-btn btn-abc btn btn-primary m-1 col-1 p-1" id="btn-${letter}">${letter}</button>`;
         }
         document.getElementById('abc-btns').innerHTML = html;
         addAbcListeners();
@@ -45,6 +45,7 @@
             if (!button.className.includes('clicked')) {
                 button.classList.remove('btn-primary');
                 button.classList.add('btn-secondary', 'clicked');
+                button.classList.remove('my-btn');
                 checkGuess(letter);
             }
         });
@@ -53,6 +54,7 @@
             let button = document.getElementById(`btn-${name}`);
             if (alphabet.includes(name) && !button.className.includes('clicked')) {
                 button.classList.remove('btn-primary');
+                button.classList.remove('my-btn');
                 button.classList.add('btn-secondary', 'clicked');
                 checkGuess(name);
             }
