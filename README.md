@@ -119,10 +119,10 @@ The page is structured in a user friendly and easy to learn way. Upon arriving t
 - GitHub
 - Gitpod
 - Tinypng
-- Paint.NET
+- Paint<span>.</span>NET
 - Balsamiq
 - Font Awsome
-- Favicon.io
+- Favicon<span>.</span>io
 - JSHint
 - Lighthouse
 - W3C Markup validation service
