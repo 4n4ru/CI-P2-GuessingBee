@@ -186,12 +186,11 @@ You can clone the repository by following these steps:
 7.Press Enter to create your local clone.
 
 ## Credits
-
+All images, save the background image were created by the developer.
 
 ### Media
 In order of apearance:
 - [background image]('assets/images/background.jpg'): <a href='https://www.freepik.com/free-photos-vectors/floral'>Floral vector created by macrovector_official - www.freepik.com</a>
-
 
 ### Code
 - CSS for background image opacity https://css-tricks.com/snippets/css/transparent-background-images/
