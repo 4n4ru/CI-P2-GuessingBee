@@ -21,7 +21,6 @@ document.addEventListener('DOMContentLoaded', function () {
  * Removes the contact forme and displays a thank you message on the contact page after form submision
  */
 function toggleThankYouMessage() {
-    document.getElementById('contact-form').style.display = 'none';
     let html = `
             <p class="text-center fs-2">Thank you for leaving a message.</p>
             <div class="image-container text-center col-5 col-sm-4 col-lg-3">
