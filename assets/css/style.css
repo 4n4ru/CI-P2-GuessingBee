@@ -30,7 +30,7 @@ body::before {
 }
 
 .game-container {
-    height: 83vh;
+    height: 500px;
 }
 
 .start-btn,
@@ -69,7 +69,6 @@ h1 img {
 }
 
 .image-container {
-    width:30%;
     margin: 0 auto;
 }
 

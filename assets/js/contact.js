@@ -20,7 +20,7 @@ function toggleThankYouMessage() {
     document.getElementById('contact-form').style.display = 'none';
     let html = `
             <p class="text-center fs-2">Thank you for leaving a message.</p>
-            <div class="image-container text-center">
+            <div class="image-container text-center col-5 col-sm-4 col-lg-3">
                 <img src="assets/images/bee-happy.png" alt="Doodle of a happy bee">
             </div>
             <div class="text-center my-2">
