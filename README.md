@@ -267,7 +267,11 @@ The website was tested on the following devices:
 In addition, the website was tested using Google Chrome Developer Tools Device Toggeling option for all available device options.
 
 ### Browser compatability
+The website was tested on the following browsers:
 
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Egde
 
 ### Testing user stories
 
