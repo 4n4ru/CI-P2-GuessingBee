@@ -27,11 +27,12 @@
 6. [Testing](#validation)
     1. [HTML Validation](#HTML-validation)
     2. [CSS Validation](#CSS-validation)
-    3. [Accessibility](#accessibility)
-    4. [Performance](#performance)
-    5. [Device testing](#performing-tests-on-various-devices)
-    6. [Browser compatibility](#browser-compatability)
-    7. [Testing user stories](#testing-user-stories)
+    3. [JavaScript Validation](#javascript-validation)
+    4. [Accessibility](#accessibility)
+    5. [Performance](#performance)
+    6. [Device testing](#performing-tests-on-various-devices)
+    7. [Browser compatibility](#browser-compatability)
+    8. [Testing user stories](#testing-user-stories)
 8. [Bugs](#Bugs)
 9. [Deployment](#deployment)
 10. [Credits](#credits)
@@ -197,8 +198,20 @@ The site consists of three pages and nine features
 ## Validation
 
 ### HTML Validation
+The W3C Markup Validation Service was used to validate the HTML of the website. All pages pass with no errors no warnings to show.
+<details><summary>Home</summary>
+<img src="docs/validation/html-validation-index.jpg">
+</details>
+<details><summary>Contact Us</summary>
+<img src="docs/validation/html-validation-contact.jpg">
+</details>
+<details><summary>404</summary>
+<img src="docs/validation/html-validation-404.jpg">
+</details>
 
 ### CSS Validation
+
+### JavaScript Validation
 
 ### Accessibility
 
