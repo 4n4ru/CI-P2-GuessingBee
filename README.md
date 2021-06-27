@@ -1,7 +1,7 @@
 # Guessing Bee
 (Developer: Ana Runje)
 
-![Mockup image]()
+![Mockup image](docs/mockup.jpg)
 
 [Live webpage](https://4n4ru.github.io/CI-P2-GuessingBee/)
 
@@ -81,14 +81,15 @@ The color palete was chosen to match the flowery theme of the background image. 
 For the fonts, Bootstrap's Native font stack was used. The phrase that is to be guessed monospace is used to avoid the words jumping form one line to the next and back depending on the guessed letter. 
 
 ### Structure
-The page is structured in a user friendly and easy to learn way. Upon arriving to the website the user sees a screen with the option to choose a difficulty for the game. The website consists of two separate pages:
+The page is structured in a user friendly and easy to learn way. Upon arriving to the website the user sees a screen with the option to choose a difficulty for the game. The website consists of three separate pages:
 
 - A homepage with 4 different views:
     - one for selecting a dificulty
     - one for playing the game
     - one that is shown after a correct guess
     - one that is shown after the user runs out of moves
-- A contac form with options to send feedback or suggest phrases to be added to the game
+- A contact form
+- A 404 page
 
 ### Wireframes
 
@@ -131,6 +132,49 @@ The page is structured in a user friendly and easy to learn way. Upon arriving t
 - EmailJS
 
 ## Features
+The site consists of three pages and nine features
+
+### Header
+- Featured on all pages
+- Consists of the game logo and game title
+
+### Footer
+- Featured on all pages
+- Consists of a section providing social media links and a link to the contact form
+
+### Start screen
+- Provides a option to choose between three diferent game dificulties.
+
+### Game screen
+- Consists of 6 different sections:
+    - Game dificulty that is currently being played
+    - A section with the current score and the h-score
+    - An image that shows how many moves are left in the game round
+    - The theme of the curent phrase to be guessed
+    - The phrase to be guessed represented with underscores that switch to letters after each correct guess
+    - Alphabet buttons
+
+### Game over screen
+- Consists of three sections
+    - A section with the current score and the h-score
+    - The game over message with a picture of a sad bee
+    - Buttons to chose what to do next
+
+### Correct guess screen
+- Consists of four sections
+    - Game dificulty that is currently being played
+    - A section with the current score and the h-score
+    - The congratulary message with a picture of a happy bee
+    - Buttons to chose what to do next
+
+### Contact form
+- A way for user to provide feedback
+
+### Form confirmation
+- Provieds the user with feedback after the form has been submited
+
+### 404 message
+- Provides the user with a way to return to the game after clicking on a broken link
 
 ## Validation
 
