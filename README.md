@@ -138,12 +138,18 @@ The site consists of three pages and nine features
 - Featured on all pages
 - Consists of the game logo and game title
 
+![Header](docs/features/feature-heading.jpg)
+
 ### Footer
 - Featured on all pages
 - Consists of a section providing social media links and a link to the contact form
 
+![Footer](docs/features/feature-footer.jpg)
+
 ### Start screen
 - Provides a option to choose between three diferent game dificulties.
+
+![Start screen](docs/features/feature-start-screen.jpg)
 
 ### Game screen
 - Consists of 6 different sections:
@@ -154,11 +160,15 @@ The site consists of three pages and nine features
     - The phrase to be guessed represented with underscores that switch to letters after each correct guess
     - Alphabet buttons
 
+![Game screen](docs/features/feature-game-screen.jpg)
+
 ### Game over screen
 - Consists of three sections
     - A section with the current score and the h-score
     - The game over message with a picture of a sad bee
     - Buttons to chose what to do next
+
+![Game Over Screen](docs/features/feature-game-over-screen.jpg)
 
 ### Correct guess screen
 - Consists of four sections
@@ -167,14 +177,22 @@ The site consists of three pages and nine features
     - The congratulary message with a picture of a happy bee
     - Buttons to chose what to do next
 
+![Correct Guess screen](docs/features/feature-correct-screen.jpg)
+
 ### Contact form
 - A way for user to provide feedback
 
+![Contact Form](docs/features/feature-contact-form.jpg)
+
 ### Form confirmation
-- Provieds the user with feedback after the form has been submited
+- Provieds the user with feedback after the form has been submited and a button to return to the game
+
+![Form confirmation](docs/features/feature-form-confirmation.jpg)
 
 ### 404 message
 - Provides the user with a way to return to the game after clicking on a broken link
+
+![404 message](docs/features/feature-404.jpg)
 
 ## Validation
 
