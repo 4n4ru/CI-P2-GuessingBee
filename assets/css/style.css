@@ -1,11 +1,20 @@
+/* Make page stretch at least 100vh to avoid whitespace below footer, 
+code taken from https://forum.freecodecamp.org/t/footer-white-space-below/191360/4 */
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+main {
+    flex: 1 0 auto; /* allows the content to grow but not shrink */
+  }
+
 /* add background image and change oppacity without affecting children
   code taken from: https://css-tricks.com/snippets/css/transparent-background-images/
 */
-
-body {
-    position: relative;
-}
-
 body::before {
     position: absolute;
     top: 0;
@@ -60,7 +69,7 @@ h1 img {
 }
 
 .image-container {
-    width: 40%;
+    width:30%;
     margin: 0 auto;
 }
 
