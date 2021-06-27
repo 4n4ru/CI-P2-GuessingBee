@@ -72,3 +72,8 @@ h1 img {
 #phrase {
     letter-spacing: 0.5rem;
 }
+
+footer {
+    background-color: #dca7aa;
+    border-top:1px solid #cc7d88;
+}
