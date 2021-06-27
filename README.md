@@ -14,6 +14,7 @@
     1. [Target Audience](#target-audience)
     2. [User Requrements and Expectations](#user-requrements-and-expectations)
     3. [User Stories](#user-stories)
+    4. [Site Owner Stories](#site-owner-stories)
 3. [Design](#design)
     1. [Design Choices](#design-choices)
     2. [Colour](#colours)
@@ -64,6 +65,8 @@ Guessing bee is a clasic Hangman game with a twist. Instead of hanging the clasi
 3. As a user, I want to to be able to pick the letters both by clicking the mouse and by using the keyboard
 4. As a user, I want to know what the correct phrase was in case I don't guess it correctly
 5. As a user, I want feedback on my correct answers
+
+### Site Owner Stories
 6. As a site owner, I want for the user to be able to share the game with friends
 7. As a site owner, I want for users to be able to make suggestions for new phrases.
 8. As a site owner, I want users to have the option to play the game on multiple different devices. 
