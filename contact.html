@@ -26,38 +26,59 @@
 </head>
 
 <body>
-    <div class="row gx-0 justify-content-center mb-2">
-        <!--logo and name of game-->
-        <div class="text-center col-12 col-lg-4 col-md-6 col-sm-8 p-3 ">
-            <h1><img src="assets/images/bee-logo.png" alt=""> Guessing Bee</h1>
-        </div>
-    </div>
-    <div class="game-container row gx-0 justify-content-center">
-        <div class="row border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3 align-items-center">
-            <div>
-                <form id="contact-form">
-                    <p>Please leave as some feedback about the game or feel free to suggest phrases to be added to the
-                        game in future.</p>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" name="name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp">
-                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                    </div>
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" rows="4" name="message"></textarea>
-                    </div>
-                    <button id="submit" type="submit" class="my-btn btn btn-primary">Submit</button>
-                    <a href="index.html"><button class="return-btn btn btn-primary" type="button">Return to
-                            game</button></a>
-                </form>
+    <header>
+        <div class="row gx-0 justify-content-center mb-2">
+            <!--logo and name of game-->
+            <div class="text-center col-12 col-lg-4 col-md-6 col-sm-8 p-3 ">
+                <h1><img src="assets/images/bee-logo.png" alt=""> Guessing Bee</h1>
             </div>
         </div>
-    </div>
+    </header>
+    <main>
+        <div class="row gx-0 justify-content-center mb-2 pb-3">
+            <div class="game-container row gx-0 justify-content-center">
+                <div class="row border bg-light col-12 col-lg-4 col-md-6 col-sm-8 p-3 align-items-center">
+                    <form id="contact-form">
+                        <p>Please leave as some feedback about the game or feel free to suggest phrases to be
+                            added to the game in future.</p>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="4" name="message"></textarea>
+                        </div>
+                        <button id="submit" type="submit" class="my-btn btn btn-primary">Submit</button>
+                        <a href="index.html"><button class="return-btn btn btn-primary" type="button">Return to
+                                game</button></a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="d-flex flex-row justify-content-between align-items-center py-2 px-4">
+            <div class="float-start fs-5">
+                <a class="px-2" href="https://twitter.com" target="_blank" rel="noopener"
+                    aria-label="Visit us on Twitter (opens in new tab)"><i class="fab fa-twitter"></i></a>
+                <a class="px-2" href="https://facerbook.com" target="_blank" rel="noopener"
+                    aria-label="Visit us on Facebook (opens in new tab)"><i class="fab fa-facebook-f"></i></a>
+                <a class="px-2" href="https://instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit us on Instagram (opens in new tab)"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="float-end">
+                <a href="contact.html">Contact Us</a>
+            </div>
+        </div>
+    </footer>
     <!--Bootstrap v5.0-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
