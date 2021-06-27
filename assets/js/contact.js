@@ -16,9 +16,9 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-function toggleThankYouMessage(){
+function toggleThankYouMessage() {
     document.getElementById('contact-form').style.display = 'none';
-        let html = `
+    let html = `
             <p class="text-center fs-2">Thank you for leaving a message.</p>
             <div class="image-container text-center">
                 <img src="assets/images/bee-happy.png" alt="Doodle of a happy bee">
@@ -26,5 +26,5 @@ function toggleThankYouMessage(){
             <div class="text-center my-2">
                 <a href="index.html" class="return-btn btn btn-primary">Return to game</a>
             </div>`;
-        document.getElementById('container').innerHTML = html;
+    document.getElementById('container').innerHTML = html;
 }
