@@ -85,3 +85,7 @@ footer a {
 footer a:hover {
     color: slategray;
 }
+
+#emailHelp {
+    color: black;
+}
