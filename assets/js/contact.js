@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         let html = `
             <p class="text-center fs-2">Thank you for leaving a message.</p>
             <div class="image-container text-center">
-                <img src="assets/images/bee-happy.png" alt="">
+                <img src="assets/images/bee-happy.png" alt="Doodle of a happy bee">
             </div>
             <div class="text-center my-2">
                 <a href="index.html" class="return-btn btn btn-primary">Return to game</a>
