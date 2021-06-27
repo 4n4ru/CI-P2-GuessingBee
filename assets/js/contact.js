@@ -12,7 +12,12 @@ document.addEventListener('DOMContentLoaded', function () {
             }, function (error) {
                 console.log('FAILED...', error);
             });
-        document.getElementById('contact-form').style.display = 'none';
+        toggleThankYouMessage();
+    });
+});
+
+function toggleThankYouMessage(){
+    document.getElementById('contact-form').style.display = 'none';
         let html = `
             <p class="text-center fs-2">Thank you for leaving a message.</p>
             <div class="image-container text-center">
@@ -22,5 +27,4 @@ document.addEventListener('DOMContentLoaded', function () {
                 <a href="index.html" class="return-btn btn btn-primary">Return to game</a>
             </div>`;
         document.getElementById('container').innerHTML = html;
-    });
-});
+}
