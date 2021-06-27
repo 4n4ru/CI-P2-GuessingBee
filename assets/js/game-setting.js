@@ -1,3 +1,6 @@
+/*
+* The file contains the image arrays and phrase object and functions for getting this data.
+*/
 let gameSettings = (function () {
     let easyImages = [
         'assets/images/flower-easy-1.png',
@@ -89,6 +92,11 @@ let gameSettings = (function () {
         ]
     };
 
+    /**
+     * Returns an image array depending on the gameType.
+     * @param {string} gameType 
+     * @returns image array
+     */
     function getImages(gameType) {
         if (gameType === 'easy') {
             return easyImages;
@@ -101,6 +109,10 @@ let gameSettings = (function () {
         }
     }
 
+    /**
+     * Calls functions to get a theme and a phrase and returns them as an object.
+     * @returns {theme, phrase} object
+     */
     function getGuessingParameters(){
         let theme = getTheme();
         let phrase = getPhrase(theme);
@@ -108,7 +120,9 @@ let gameSettings = (function () {
     }
 
     /**
-     * Randomly picks a theme for the game
+     * Randomly picks a theme.
+     * Creates a themes array, genereates an random number and retuns the coresponding item from the themes array.
+     * @returns {string} themes[num]
      */
     function getTheme() {
         let themes = Object.keys(phrases);
@@ -117,7 +131,11 @@ let gameSettings = (function () {
     }
 
     /**
-     * Randomly picks a phrase from the given theme
+     * Randomly picks a phrase from the given theme.
+     * Creates a themePhrases array with all phrases with the key theme, generates a random number and returns the corresponding 
+     * item from the themePhrases array.
+     * @param {string} theme 
+     * @returns {string} themePhrases[num]
      */
     function getPhrase(theme) {
         let themePhrases = phrases[theme];
@@ -125,6 +143,9 @@ let gameSettings = (function () {
         return themePhrases[num];
     }
 
+    /**
+     * Returns {function} getImages and {function} getGuessingParameters
+     */
     return {
         getImages,
         getGuessingParameters
