@@ -58,6 +58,12 @@ Guessing bee is a clasic Hangman game with a twist. Instead of hanging the clasi
 - people looking for a quick and easy yet engaging game 
 
 ### User Requrements and Expectations
+- A simple and intuitive navigation system
+- Quick, easy, and fun to play
+- Links and functions that work as expected
+- Good presentation and a visually appealing design regardless of screen size
+- An easy way to leave feedback
+- Accessibility
 
 ### User Stories
 1. As a user, I want to be able to pick a difficulty for the game
