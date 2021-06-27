@@ -223,13 +223,26 @@ The W3C Jigsaw CSS Validation Service was used to validate the CSS of the websit
 JSHint Static Code Analysis Tool for JavaScript was used to validate the Javascript files. No significant issues were found.
 <details><summary>game-settings.js</summary>
 <img src="docs/validation/js-validation-game-settings.jpg">
-</details><details><summary>guessing-be.js</summary>
+</details>
+<details><summary>guessing-be.js</summary>
 <img src="docs/validation/js-validation-guessing-bee.jpg">
-</details><details><summary>contact.js</summary>
+</details>
+<details><summary>contact.js</summary>
 <img src="docs/validation/js-validation-contact.jpg">
 </details>
 
 ### Accessibility
+The WAVE WebAIM web accessibility evaluation tool was used to ensure the website met high accessibility standards. All pages pass with 0 errors.
+
+<details><summary>Home</summary>
+<img src="docs/validation/accessibility-evaluation-index.jpg">
+</details>
+<details><summary>Contact</summary>
+<img src="docs/validation/accessibility-evaluation-contact.jpg">
+</details>
+<details><summary>404</summary>
+<img src="docs/validation/accessibility-evaluation-404.jpg">
+</details>
 
 ### Performance 
 
