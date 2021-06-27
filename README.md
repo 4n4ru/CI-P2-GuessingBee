@@ -71,11 +71,11 @@ Guessing bee is a clasic Hangman game with a twist. Instead of hanging the clasi
 3. As a user, I want to to be able to pick the letters both by clicking the mouse and by using the keyboard
 4. As a user, I want to know what the correct phrase was in case I don't guess it correctly
 5. As a user, I want feedback on my correct answers
+6. As a user, I want confirmation that my feedback was send
 
 ### Site Owner Stories
-6. As a site owner, I want for the user to be able to share the game with friends
 7. As a site owner, I want for users to be able to make suggestions for new phrases.
-8. As a site owner, I want users to have the option to play the game on multiple different devices. 
+8. As a site owner, I want users to be able to fins us on social media.
 
 ## Design
 
@@ -153,11 +153,13 @@ The site consists of three pages and nine features
 ### Footer
 - Featured on all pages
 - Consists of a section providing social media links and a link to the contact form
+- User story covered: 8
 
 ![Footer](docs/features/feature-footer.jpg)
 
 ### Start screen
 - Provides a option to choose between three diferent game dificulties.
+- User story covered: 1
 
 ![Start screen](docs/features/feature-start-screen.jpg)
 
@@ -169,6 +171,7 @@ The site consists of three pages and nine features
     - The theme of the curent phrase to be guessed
     - The phrase to be guessed represented with underscores that switch to letters after each correct guess
     - Alphabet buttons
+    - User stories covered: 2, 3
 
 ![Game screen](docs/features/feature-game-screen.jpg)
 
@@ -177,6 +180,7 @@ The site consists of three pages and nine features
     - A section with the current score and the h-score
     - The game over message with a picture of a sad bee
     - Buttons to chose what to do next
+    - User stories coverd: 4
 
 ![Game Over Screen](docs/features/feature-game-over-screen.jpg)
 
@@ -186,16 +190,19 @@ The site consists of three pages and nine features
     - A section with the current score and the h-score
     - The congratulary message with a picture of a happy bee
     - Buttons to chose what to do next
+    - User story covered: 5
 
 ![Correct Guess screen](docs/features/feature-correct-screen.jpg)
 
 ### Contact form
 - A way for user to provide feedback
+- User story covered 7 
 
 ![Contact Form](docs/features/feature-contact-form.jpg)
 
 ### Form confirmation
 - Provieds the user with feedback after the form has been submited and a button to return to the game
+- User story covered: 6
 
 ![Form confirmation](docs/features/feature-form-confirmation.jpg)
 
