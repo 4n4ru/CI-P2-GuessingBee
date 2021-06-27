@@ -5,7 +5,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('contact-form').addEventListener('submit', function (event) {
         event.preventDefault();
-        // these IDs from the previous steps
+        emailjs.init("user_nPOPkmIg53EiBIpRGSmhi");
         emailjs.sendForm('guessing-bee', 'template_q5mqt83', this)
             .then(function () {
 
