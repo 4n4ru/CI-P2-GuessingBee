@@ -322,6 +322,9 @@ In order of apearance:
 ### Code
 - CSS for background image opacity https://css-tricks.com/snippets/css/transparent-background-images/
 - HTML for the modals https://getbootstrap.com/docs/5.0/components/modal/#live-demo
+- HTML for contact form https://getbootstrap.com/docs/5.0/forms/overview/#overview
+- Email sending JavaScript API code was written with the help of the official EmailJS tuttorial https://www.emailjs.com/docs/tutorial/creating-contact-form/
+- CSS code to avoid whitespace below footer was taken from a forum post on FreeCodeCamp
 
 ## Acknowledgements
 I would like to take the opportunity to thank:
