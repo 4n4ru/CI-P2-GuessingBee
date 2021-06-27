@@ -12,5 +12,15 @@ document.addEventListener('DOMContentLoaded', function () {
             }, function (error) {
                 console.log('FAILED...', error);
             });
+        document.getElementById('contact-form').style.display = 'none';
+        let html = `
+            <p class="text-center fs-2">Thank you for leaving a message.</p>
+            <div class="image-container text-center">
+                <img src="assets/images/bee-happy.png" alt="">
+            </div>
+            <div class="text-center my-2">
+                <a href="index.html"><button class="return-btn btn btn-primary" type="button">Return to game</button></a>
+            </div>`;
+        document.getElementById('container').innerHTML = html;
     });
 });
