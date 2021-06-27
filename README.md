@@ -336,11 +336,12 @@ In order of apearance:
 - [background image]('assets/images/background.jpg'): <a href='https://www.freepik.com/free-photos-vectors/floral'>Floral vector created by macrovector_official - www.freepik.com</a>
 
 ### Code
+- CSS code to avoid whitespace below footer was taken from a forum post on FreeCodeCamp https://forum.freecodecamp.org/t/footer-white-space-below/191360/4
 - CSS for background image opacity https://css-tricks.com/snippets/css/transparent-background-images/
 - HTML for the modals https://getbootstrap.com/docs/5.0/components/modal/#live-demo
 - HTML for contact form https://getbootstrap.com/docs/5.0/forms/overview/#overview
+- JavaScript code for bootstrap modal usage from https://getbootstrap.com/docs/5.0/components/modal/#via-javascript
 - Email sending JavaScript API code was written with the help of the official EmailJS tuttorial https://www.emailjs.com/docs/tutorial/creating-contact-form/
-- CSS code to avoid whitespace below footer was taken from a forum post on FreeCodeCamp https://forum.freecodecamp.org/t/footer-white-space-below/191360/4
 
 ## Acknowledgements
 I would like to take the opportunity to thank:
