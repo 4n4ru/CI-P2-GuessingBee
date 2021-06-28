@@ -106,16 +106,16 @@ The page is structured in a user friendly and easy to learn way. Upon arriving t
 
 ### Wireframes
 
-<details><summary>Start</summary>
+<details><summary>Start screen</summary>
 <img src="docs/wireframes/start-screen.png">
 </details>
-<details><summary>Game</summary>
+<details><summary>Game screen</summary>
 <img src="docs/wireframes/game-screen.png">
 </details>
-<details><summary>Next</summary>
+<details><summary>Correct screen</summary>
 <img src="docs/wireframes/correct-screen.png">
 </details>
-<details><summary>Game Over</summary>
+<details><summary>Game Over Screen</summary>
 <img src="docs/wireframes/game-over-screen.png">
 </details>
 
