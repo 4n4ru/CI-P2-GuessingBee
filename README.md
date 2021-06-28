@@ -86,7 +86,9 @@ The game was designed to have a calming and relaxing effect on the user. Instead
 ### Colour
 The color palete was chosen to match the flowery theme of the background image. A color picker was used to pick colors from the background image, these colors where then further ajusted to meet accesibility criteria. 
 
-![Colour palette](docs/features/color-palette.jpg)
+<details><summary>Colour palette</summary>
+<img src="docs/features/color-palette.jpg">
+</details>
 
 ### Fonts
 For the fonts, Bootstrap's Native font stack was used. The phrase that is to be guessed monospace is used to avoid the words jumping form one line to the next and back depending on the guessed letter. 
@@ -116,7 +118,6 @@ The page is structured in a user friendly and easy to learn way. Upon arriving t
 <details><summary>Game Over</summary>
 <img src="docs/wireframes/game-over-screen.png">
 </details>
-
 
 ## Technologies Used
 
