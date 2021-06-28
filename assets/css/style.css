@@ -29,10 +29,12 @@ body::before {
     z-index: -1;
 }
 
+/* set height for game container */
 .game-container {
     height: 500px;
 }
 
+/* override bootstrap button colors */
 .start-btn,
 .my-btn, 
 .restart-btn, 
@@ -45,6 +47,7 @@ body::before {
     border-color: #cc7d88;
 }
 
+/* override bootstrap button colors on hover */
 .start-btn:hover,
 .my-btn:hover,
 .restart-btn:hover, 
@@ -57,17 +60,24 @@ body::before {
     border-color: #cc7d88;
 }
 
+/* make images responsive without distorting */
 img {
     height: 100%;
     width: 100%;
     object-fit: contain;
 }
 
+/* header */
+
+/* set the logo image height to same height as h1 element */
 h1 img {
     width: calc(1.375rem + 1.5vw);
     height: calc(1.375rem + 1.5vw);
 }
 
+/* main */
+
+/* center image */
 .image-container {
     margin: 0 auto;
 }
@@ -79,6 +89,8 @@ h1 img {
 #phrase {
     letter-spacing: 0.5rem;
 }
+
+/* footer */
 
 footer {
     background-color: #dca7aa;
@@ -95,6 +107,8 @@ footer a:hover,
 header a:hover{
     color: slategray;
 }
+
+/* contact form */
 
 #emailHelp {
     color: black;
