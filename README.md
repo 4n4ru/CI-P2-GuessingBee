@@ -375,8 +375,15 @@ The website was tested on the following browsers:
 
 | **Bug** | **Fix** |
 | ----------- | ----------- |
-|  |  |
-- not working for uppercase letters
+| Score doesn't reset after the game is restarted | Add score reset to showStartScreen function |
+| The phrase that needs to be guessed jumps around after each correct letter picked | Change font to monospace |
+| On the correct screen the total score is shown instead of round score | Set the HTML to roundScore instead of score |
+| Checking correct guess is not working for uppercase letters when clicking keyboard | call the toUpperCase function on key |
+| The game container is not centered for some screen sizes | Using Bootstrap center the container fior all screen sizes |
+| Alphabet buttons don't change color after they are clicked | Remove the my-btn class after the click event is fired |
+| Social media links are not visible on contact and 404 page | Add missing FontAwesome kit to the pages |
+| On some tablets whitespace below the footer apears | Add CSS to make the pages min-height: 100vh and allow the main element to grow, but not to shrink |
+| The contact page has overflow on smaller screen sizes | Change padding and margin sizes for smaller screens |
 
 ## Deployment
 The website was deployed using GitHub Pages by following these steps:
