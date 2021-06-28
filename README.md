@@ -291,7 +291,77 @@ The website was tested on the following browsers:
 
 ### Testing user stories
 
-1. 
+1. As a user, I want to be able to pick a difficulty for the game
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+</details>
+
+2. As a user, I want to test my general knowledge by guessing different phrases
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+</details>
+
+3. As a user, I want to to be able to pick the letters both by clicking the mouse and by using the keyboard
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+</details>
+
+4. As a user, I want to know what the correct phrase was in case I don't guess it correctly
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+</details>
+
+5. As a user, I want feedback on my correct answers
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+</details>
+
+6. As a user, I want confirmation that my feedback was send
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+</details>
+
+7. As a site owner, I want for users to be able to make suggestions for new phrases.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|-------------|------------|---------------------|-------------------|
+
+<details><summary>Screenshots</summary>
+<img src="">
+<img src="">
+</details>
+
+8. As a site owner, I want users to be able to fins us on social media.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
