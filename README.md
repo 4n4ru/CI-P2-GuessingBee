@@ -398,6 +398,14 @@ You can clone the repository by following these steps:
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7.Press Enter to create your local clone.
 
+### EmailJS API
+1. Create an account at emailjs.com
+2. Add new email service, make note of the contact_service id
+3. Add new email template, make note of the contact_form id
+4. Go the the integration dashboard, make note of you user id
+5. Load the EmailJS SDK in the head of your HTML file
+6. In JavaScript create a function that listens to a submit event and then initializes the SDK with your user id (emailjs.init('YOUR_USER_ID');) and submits the form (emailjs.sendForm('contact_service', 'contact_form', this);)
+
 ## Credits
 All images, save the background image were created by the developer.
 
