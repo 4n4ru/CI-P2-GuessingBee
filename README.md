@@ -74,8 +74,8 @@ Guessing bee is a clasic Hangman game with a twist. Instead of hanging the clasi
 6. As a user, I want confirmation that my feedback was send
 
 ### Site Owner Stories
-7. As a site owner, I want for users to be able to make suggestions for new phrases.
-8. As a site owner, I want users to be able to fins us on social media.
+7. As a site owner, I want for users to be able to contact us or make suggestions for new phrases.
+8. As a site owner, I want users to be able to find us on social media.
 
 ## Design
 
@@ -295,9 +295,9 @@ The website was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Start screen | Click on the desired difficulty | The games screen loads with the desired difficulty | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
 <img src="">
 </details>
 
@@ -305,9 +305,9 @@ The website was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Game screen | Click the alphabet buttons or use your keyboard to guess letters and reveal the correct answer | Either the phrase displayed or the image change depending if your guess is correct or wrong | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
 <img src="">
 </details>
 
@@ -315,9 +315,9 @@ The website was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Game screen | Click the alphabet buttons or use your keyboard | The used letters change colour and can't be picked a second time | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
 <img src="">
 </details>
 
@@ -325,9 +325,9 @@ The website was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Game over screen | Run out of moves | The game over screen with the correct answer is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
 <img src="">
 </details>
 
@@ -335,9 +335,9 @@ The website was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Correct guess screen | Complete the phrase before you run out of moves | The correct message is displayed | works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
 <img src="">
 </details>
 
@@ -345,29 +345,29 @@ The website was tested on the following browsers:
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Form confirmation | Fill out the contact form and click the submit button | A thank you message is displayed | Works as expected | 
 
 <details><summary>Screenshots</summary>
-<img src="">
 <img src="">
 </details>
 
-7. As a site owner, I want for users to be able to make suggestions for new phrases.
+7. As a site owner, I want for users to be able to contact us or make suggestions for new phrases.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Contact form | Scroll down to the footer section and click the constact us link | Displays the contact form | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
 <img src="">
 </details>
 
-8. As a site owner, I want users to be able to fins us on social media.
+8. As a site owner, I want users to be able to find us on social media.
 
 | **Feature** | **Action** | **Expected Result** | **Actual Result** |
 |-------------|------------|---------------------|-------------------|
+| Footer | Scroll down to the footer section | See social media links | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
 <img src="">
 </details>
 
