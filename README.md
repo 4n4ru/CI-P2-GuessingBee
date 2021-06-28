@@ -36,6 +36,7 @@
     8. [Testing user stories](#testing-user-stories)
 8. [Bugs](#Bugs)
 9. [Deployment](#deployment)
+    1. [EmailJS API](#emailjs-api)
 10. [Credits](#credits)
 11. [Acknowledgements](#acknowledgements)
 
@@ -316,7 +317,7 @@ The website was tested on the following browsers:
 | Start screen | Click on the desired difficulty | The games screen loads with the desired difficulty | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-story-testing/user-story-1.jpg">
 </details>
 
 2. As a user, I want to test my general knowledge by guessing different phrases
@@ -326,7 +327,7 @@ The website was tested on the following browsers:
 | Game screen | Click the alphabet buttons or use your keyboard to guess letters and reveal the correct answer | Either the phrase displayed or the image change depending if your guess is correct or wrong | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-story-testing/user-story-2.jpg">
 </details>
 
 3. As a user, I want to to be able to pick the letters both by clicking the mouse and by using the keyboard
@@ -336,7 +337,7 @@ The website was tested on the following browsers:
 | Game screen | Click the alphabet buttons or use your keyboard | The used letters change colour and can't be picked a second time | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-story-testing/user-story-3.jpg">
 </details>
 
 4. As a user, I want to know what the correct phrase was in case I don't guess it correctly
@@ -346,7 +347,7 @@ The website was tested on the following browsers:
 | Game over screen | Run out of moves | The game over screen with the correct answer is displayed | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-story-testing/user-story-4.jpg">
 </details>
 
 5. As a user, I want feedback on my correct answers
@@ -356,7 +357,7 @@ The website was tested on the following browsers:
 | Correct guess screen | Complete the phrase before you run out of moves | The correct message is displayed | works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-story-testing/user-story-5.jpg">
 </details>
 
 6. As a user, I want confirmation that my feedback was send
@@ -366,7 +367,7 @@ The website was tested on the following browsers:
 | Form confirmation | Fill out the contact form and click the submit button | A thank you message is displayed | Works as expected | 
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-story-testing/user-story-6.jpg">
 </details>
 
 7. As a site owner, I want for users to be able to contact us or make suggestions for new phrases.
@@ -376,7 +377,7 @@ The website was tested on the following browsers:
 | Contact form | Scroll down to the footer section and click the constact us link | Displays the contact form | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-story-testing/user-story-7.jpg">
 </details>
 
 8. As a site owner, I want users to be able to find us on social media.
@@ -386,7 +387,7 @@ The website was tested on the following browsers:
 | Footer | Scroll down to the footer section | See social media links | Works as expected |
 
 <details><summary>Screenshots</summary>
-<img src="">
+<img src="docs/user-story-testing/user-story-8.jpg">
 </details>
 
 ## Bugs
