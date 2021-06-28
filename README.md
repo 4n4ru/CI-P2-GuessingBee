@@ -148,20 +148,26 @@ The site consists of three pages and nine features
 - Featured on all pages
 - Consists of the game logo and game title
 
-![Header](docs/features/feature-heading.jpg)
+<details><summary>Header</summary>
+<img src="docs/features/feature-heading.jpg">
+</details>
 
 ### Footer
 - Featured on all pages
 - Consists of a section providing social media links and a link to the contact form
 - User story covered: 8
 
-![Footer](docs/features/feature-footer.jpg)
+<details><summary>Footer</summary>
+<img src="docs/features/feature-footer.jpg">
+</details>
 
 ### Start screen
 - Provides a option to choose between three diferent game dificulties.
 - User story covered: 1
 
-![Start screen](docs/features/feature-start-screen.jpg)
+<details><summary>Start screen</summary>
+<img src="docs/features/feature-start-screen.jpg">
+</details>
 
 ### Game screen
 - Consists of 6 different sections:
@@ -173,7 +179,9 @@ The site consists of three pages and nine features
     - Alphabet buttons
     - User stories covered: 2, 3
 
-![Game screen](docs/features/feature-game-screen.jpg)
+<details><summary>Game screen</summary>
+<img src="docs/features/feature-game-screen.jpg">
+</details>
 
 ### Game over screen
 - Consists of three sections
@@ -182,7 +190,9 @@ The site consists of three pages and nine features
     - Buttons to chose what to do next
     - User stories coverd: 4
 
-![Game Over Screen](docs/features/feature-game-over-screen.jpg)
+<details><summary>Game Over Screen</summary>
+<img src="docs/features/feature-game-over-screen.jpg">
+</details>
 
 ### Correct guess screen
 - Consists of four sections
@@ -192,24 +202,32 @@ The site consists of three pages and nine features
     - Buttons to chose what to do next
     - User story covered: 5
 
-![Correct Guess screen](docs/features/feature-correct-screen.jpg)
+<details><summary>Correct Guess screen</summary>
+<img src="docs/features/feature-correct-screen.jpg">
+</details>
 
 ### Contact form
 - A way for user to provide feedback
 - User story covered 7 
 
-![Contact Form](docs/features/feature-contact-form.jpg)
+<details><summary>Contact Form</summary>
+<img src="docs/features/feature-contact-form.jpg">
+</details>
 
 ### Form confirmation
 - Provieds the user with feedback after the form has been submited and a button to return to the game
 - User story covered: 6
 
-![Form confirmation](docs/features/feature-form-confirmation.jpg)
+<details><summary>Form confirmation</summary>
+<img src="docs/features/feature-form-confirmation.jpg">
+</details>
 
 ### 404 message
 - Provides the user with a way to return to the game after clicking on a broken link
 
-![404 message](docs/features/feature-404.jpg)
+<details><summary>404 message</summary>
+<img src="docs/features/feature-404.jpg">
+</details>
 
 ## Validation
 
