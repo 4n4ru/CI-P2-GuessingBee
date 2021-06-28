@@ -115,8 +115,17 @@ The page is structured in a user friendly and easy to learn way. Upon arriving t
 <details><summary>Correct screen</summary>
 <img src="docs/wireframes/correct-screen.png">
 </details>
-<details><summary>Game Over Screen</summary>
+<details><summary>Game over screen</summary>
 <img src="docs/wireframes/game-over-screen.png">
+</details>
+<details><summary>Contact Us</summary>
+<img src="docs/wireframes/contact-us.png">
+</details>
+<details><summary>Form confirmation</summary>
+<img src="docs/wireframes/form-confirmation.png">
+</details>
+<details><summary>404 page</summary>
+<img src="docs/wireframes/404-page.png">
 </details>
 
 ## Technologies Used
